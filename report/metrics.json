@@ -1,0 +1,112 @@
+{
+  "patterns_in_automaton": 157,
+  "attack": {
+    "total": 38,
+    "detected": 38,
+    "recall": 1.0,
+    "by_category": {
+      "combo": {
+        "detected": 3,
+        "total": 3
+      },
+      "homophone": {
+        "detected": 5,
+        "total": 5
+      },
+      "homophone_chain": {
+        "detected": 4,
+        "total": 4
+      },
+      "mixed_script": {
+        "detected": 7,
+        "total": 7
+      },
+      "repeat": {
+        "detected": 4,
+        "total": 4
+      },
+      "shape": {
+        "detected": 4,
+        "total": 4
+      },
+      "split": {
+        "detected": 2,
+        "total": 2
+      },
+      "symbol": {
+        "detected": 9,
+        "total": 9
+      }
+    },
+    "missed": []
+  },
+  "normal": {
+    "sentences": 781,
+    "false_positives": 0,
+    "fp_rate": 0.0,
+    "fp_samples": [],
+    "whitelist_suppressed": 9,
+    "suppressed_samples": [
+      {
+        "text": "他很有威信，大家都愿意听他的。",
+        "rule_id": "R-WX",
+        "variant": "威信",
+        "reason": "whitelist:有威信"
+      },
+      {
+        "text": "新领导上任三个月，很快树立威信。",
+        "rule_id": "R-WX",
+        "variant": "威信",
+        "reason": "whitelist:树立威信"
+      },
+      {
+        "text": "他在读博，每天泡在实验室。",
+        "rule_id": "R-DB",
+        "variant": "读博",
+        "reason": "whitelist:读博"
+      },
+      {
+        "text": "读博士期间她发表了两篇论文。",
+        "rule_id": "R-DB",
+        "variant": "读博",
+        "reason": "whitelist:读博"
+      },
+      {
+        "text": "只有博采众长，才能把方案做扎实。",
+        "rule_id": "R-BC",
+        "variant": "博采",
+        "reason": "whitelist:博采众长"
+      },
+      {
+        "text": "请关注我们的微信公众号，获取最新通知。",
+        "rule_id": "R-WX",
+        "variant": "微信",
+        "reason": "whitelist:微信公众号"
+      },
+      {
+        "text": "微芯科技发布了新一代芯片。",
+        "rule_id": "R-WX",
+        "variant": "微芯",
+        "reason": "whitelist:微芯科技"
+      },
+      {
+        "text": "微芯生物的股价今天上涨了。",
+        "rule_id": "R-WX",
+        "variant": "微芯",
+        "reason": "whitelist:微芯生物"
+      },
+      {
+        "text": "他去办证大厅需要排很久的队。",
+        "rule_id": "R-BZ",
+        "variant": "办证",
+        "reason": "whitelist:办证大厅"
+      }
+    ]
+  },
+  "performance": {
+    "chars": 1941503,
+    "seconds": 0.826,
+    "chars_per_sec": 2349231,
+    "hits_in_long_text": 0
+  }
+}

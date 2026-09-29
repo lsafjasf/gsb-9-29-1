@@ -1,0 +1,47 @@
+[
+  {"text": "赌※博", "expect": ["R-DB"], "category": "symbol"},
+  {"text": "赌 博 加 我", "expect": ["R-DB"], "category": "symbol"},
+  {"text": "赌。博", "expect": ["R-DB"], "category": "symbol"},
+  {"text": "微​信", "expect": ["R-WX"], "category": "symbol"},
+  {"text": "博⭐彩⭐平⭐台", "expect": ["R-BC"], "category": "symbol"},
+  {"text": "办 证 加 微 信", "expect": ["R-BZ", "R-WX"], "category": "symbol"},
+  {"text": "微　　　信", "expect": ["R-WX"], "category": "symbol"},
+  {"text": "赌💰博", "expect": ["R-DB"], "category": "symbol"},
+  {"text": "c a s i n o", "expect": ["R-CASINO"], "category": "symbol"},
+
+  {"text": "赌赌赌博", "expect": ["R-DB"], "category": "repeat"},
+  {"text": "微微微信", "expect": ["R-WX"], "category": "repeat"},
+  {"text": "casinoo", "expect": ["R-CASINO"], "category": "repeat"},
+  {"text": "博博博彩彩", "expect": ["R-BC"], "category": "repeat"},
+
+  {"text": "堵博", "expect": ["R-DB"], "category": "homophone"},
+  {"text": "渡博", "expect": ["R-DB"], "category": "homophone"},
+  {"text": "博菜", "expect": ["R-BC"], "category": "homophone"},
+  {"text": "办正", "expect": ["R-BZ"], "category": "homophone"},
+  {"text": "唯信", "expect": ["R-WX"], "category": "homophone"},
+
+  {"text": "堵搏", "expect": ["R-DB"], "category": "homophone_chain"},
+  {"text": "威欣", "expect": ["R-WX"], "category": "homophone_chain"},
+  {"text": "半正", "expect": ["R-BZ"], "category": "homophone_chain"},
+  {"text": "薄菜", "expect": ["R-BC"], "category": "homophone_chain"},
+
+  {"text": "赌愽", "expect": ["R-DB"], "category": "shape"},
+  {"text": "賭博", "expect": ["R-DB"], "category": "shape"},
+  {"text": "辦证", "expect": ["R-BZ"], "category": "shape"},
+  {"text": "徽信", "expect": ["R-WX"], "category": "shape"},
+
+  {"text": "贝者博", "expect": ["R-DB"], "category": "split"},
+  {"text": "办言正", "expect": ["R-BZ"], "category": "split"},
+
+  {"text": "加vx", "expect": ["R-WX"], "category": "mixed_script"},
+  {"text": "加V信", "expect": ["R-WX"], "category": "mixed_script"},
+  {"text": "wei信号", "expect": ["R-WX"], "category": "mixed_script"},
+  {"text": "ＶＸ加我", "expect": ["R-WX"], "category": "mixed_script"},
+  {"text": "c4sino", "expect": ["R-CASINO"], "category": "mixed_script"},
+  {"text": "c@sino在线", "expect": ["R-CASINO"], "category": "mixed_script"},
+  {"text": "CASINO", "expect": ["R-CASINO"], "category": "mixed_script"},
+
+  {"text": "加 我 唯★欣 看 贝者 博", "expect": ["R-WX", "R-DB"], "category": "combo"},
+  {"text": "v​x​加​我", "expect": ["R-WX"], "category": "combo"},
+  {"text": "贝★者 博​", "expect": ["R-DB"], "category": "combo"}
+]

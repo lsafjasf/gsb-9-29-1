@@ -1,0 +1,25 @@
+{
+  "settings": {
+    "collapse_repeats": true,
+    "max_substitutions": 3,
+    "max_variants_per_word": 512
+  },
+  "rules": [
+    {"id": "R-WX", "word": "微信", "variants": ["vx", "v信", "wei信"]},
+    {"id": "R-DB", "word": "赌博"},
+    {"id": "R-BC", "word": "博彩"},
+    {"id": "R-BZ", "word": "办证"},
+    {"id": "R-CASINO", "word": "casino"}
+  ],
+  "whitelist": [
+    "有威信",
+    "树立威信",
+    "威信扫地",
+    "读博",
+    "博采众长",
+    "微信公众号",
+    "微芯科技",
+    "微芯生物",
+    "办证大厅"
+  ]
+}
