@@ -1,0 +1,5 @@
+Attention Is All the Transformer Needs
+
+The transformer architecture relies entirely on attention. Attention lets the transformer model long-range dependencies without recurrence. Each transformer layer applies multi-head attention followed by a feed-forward network.
+
+Because attention is parallelizable, the transformer trains far faster than recurrent models. The transformer now dominates machine translation, and attention variants keep improving efficiency.

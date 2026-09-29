@@ -1,0 +1,48 @@
+{
+  "en_climate": [
+    "climate change",
+    "carbon emissions",
+    "renewable energy",
+    "greenhouse gas",
+    "energy transition",
+    "fossil fuels"
+  ],
+  "en_db": [
+    "database index",
+    "index",
+    "b-tree",
+    "query performance"
+  ],
+  "en_domain": [
+    "transformer",
+    "attention"
+  ],
+  "en_short": [
+    "billing system",
+    "migration"
+  ],
+  "zh_economy": [
+    "通货膨胀",
+    "货币政策",
+    "央行",
+    "利率",
+    "公开市场操作"
+  ],
+  "zh_health": [
+    "褪黑素",
+    "睡眠质量",
+    "深度睡眠"
+  ],
+  "zh_ml": [
+    "过拟合",
+    "机器学习",
+    "正则化",
+    "交叉验证",
+    "训练数据",
+    "模型复杂度"
+  ],
+  "zh_short": [
+    "量子计算",
+    "量子比特"
+  ]
+}

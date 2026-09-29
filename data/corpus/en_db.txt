@@ -1,0 +1,7 @@
+Why a Database Index Matters
+
+A database index lets the query engine find rows without scanning the entire table. Most relational databases implement an index with a B-tree, because a B-tree keeps data sorted and supports range queries.
+
+Without an index, query performance degrades linearly as the table grows. With a B-tree index, lookup cost grows logarithmically, so query performance stays stable.
+
+An index is not free: every insert and update must also maintain the index. Choosing the right database index is a trade-off between read speed and write overhead.
