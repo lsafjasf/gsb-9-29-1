@@ -1,0 +1,4 @@
+n,method,status,iterations,final_rel_residual,max_error,wall_time_s
+255,sor,converged,758,9.879e-07,1.233623e-05,9.448
+255,multigrid,converged,7,5.009e-07,1.235356e-05,0.420
+511,multigrid,converged,7,5.535e-07,2.941002e-06,1.758

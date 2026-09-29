@@ -1,0 +1,7 @@
+case,n,status,iterations,final_rel_residual,max_error
+uniform_boundary,31,converged,157,9.156e-13,2.883e-11
+uniform_boundary,63,converged,307,9.898e-13,6.698e-11
+sor_omega=1.8215,31,converged,120,8.923e-09,
+sor_omega=2.0000,31,max_iter_reached,20000,4.908e+00,
+sor_omega=2.0500,31,diverged,436,1.002e+10,
+sor_omega=2.1000,31,diverged,220,1.010e+10,

@@ -1,0 +1,5 @@
+method,status,iterations,final_rel_residual,max_error,wall_time_s
+jacobi,converged,11463,9.995e-07,1.998221e-04,8.201
+gauss_seidel,converged,5733,9.983e-07,1.998249e-04,4.072
+sor,converged,189,9.921e-07,2.005963e-04,0.133
+multigrid,converged,7,3.817e-07,2.006280e-04,0.022
