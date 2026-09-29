@@ -1,0 +1,52 @@
+========================================================================
+doc1  (17 src sentences, 15 tgt sentences)
+------------------------------------------------------------------------
+[1-1] The city council approved the new budget on Monday.  <->  市议会于周一批准了新预算。  p=0.78
+[2-1] The vote was close. / Seven members voted in favor, and five voted against.  <->  投票结果很接近，七名成员赞成，五名成员反对。  p=0.60  (LOW CONFIDENCE)
+[1-1] The budget includes funding for three new schools.  <->  预算包括为三所新学校提供资金。  p=0.95
+[1-1] It also sets aside money for road repairs in 2026.  <->  预算还为2026年的道路维修预留了资金。  p=0.96
+[1-1] Mayor Anna Lee called the decision a victory for local families.  <->  市长Anna Lee称这一决定是当地家庭的胜利。  p=0.92
+[1-1] The budget will raise spending by 8 percent.  <->  预算将使支出增加8%。  p=0.86
+[1-1] Opposition leaders disagreed strongly.  <->  议会就预算辩论了六个小时。  p=0.32  (LOW CONFIDENCE)
+[1-1] They said the plan would raise taxes for small businesses.  <->  居民可以参加会议。  p=0.63  (LOW CONFIDENCE)
+[1-1] The council debated the budget for six hours.  <->  每人可以发言两分钟。  p=0.48  (LOW CONFIDENCE)
+[1-0] Residents can attend the meeting and speak for two minutes each.  <->  <empty>  p=0.32  (LOW CONFIDENCE)
+[1-1] The meeting starts at 7 p.m. in Room 204.  <->  会议于晚上7点在204室开始。  p=0.76
+[1-1] More than 300 people attended the last meeting.  <->  上次会议有300多人参加。  p=0.93
+[1-1] A final decision on the park project is expected in December.  <->  预计12月将对公园项目做出最终决定。  p=0.94
+[1-1] The park project will cost 2 million dollars.  <->  公园项目将耗资2百万美元。  p=0.94
+[1-1] Officials promised to publish the full report online.  <->  官员们承诺将在网上公布完整报告。  p=0.94
+[1-1] The report will be available next Friday.  <->  报告将于下周五公布。  p=0.99
+------------------------------------------------------------------------
+accuracy: 12/15 = 80.0%   tentative beads: 5 (hits: 1)
+confident-only accuracy: 11/15 = 73.3%
+errors: boundary_shift=1, missed_deletion=1, missed_merge=1
+
+========================================================================
+doc2  (6 src sentences, 5 tgt sentences)
+------------------------------------------------------------------------
+[1-1] The shop opens at nine.  <->  商店九点开门。  p=0.92
+[1-1] The shop closes at five.  <->  商店五点关门。  p=0.38  (LOW CONFIDENCE)
+[1-1] The shop opens at nine.  <->  商店九点开门。  p=0.79
+[1-1] Business is slow on Mondays.  <->  周一的生意很清淡。  p=0.30  (LOW CONFIDENCE)
+[2-1] The owner is not worried. / She plans to repaint the sign.  <->  店主并不担心，她打算重新粉刷招牌。  p=0.26  (LOW CONFIDENCE)
+------------------------------------------------------------------------
+accuracy: 5/5 = 100.0%   tentative beads: 3 (hits: 3)
+confident-only accuracy: 2/5 = 40.0%
+
+========================================================================
+doc3  (5 src sentences, 6 tgt sentences)
+------------------------------------------------------------------------
+[1-1] The museum will reopen in June.  <->  博物馆将于六月重新开放。  p=0.36  (LOW CONFIDENCE)
+[1-1] It has been closed for two years.  <->  它已经闭馆两年了。  p=0.29  (LOW CONFIDENCE)
+[0-1] <empty>  <->  此次闭馆是1960年以来的首次。  p=0.20  (LOW CONFIDENCE)
+[1-1] The renovation cost 5 million dollars.  <->  翻新工程耗资500万元。  p=0.12  (LOW CONFIDENCE)
+[1-1] A new wing was added to the building.  <->  大楼新增了一个侧厅。  p=0.26  (LOW CONFIDENCE)
+[1-1] Tickets are already on sale online.  <->  门票已在网上开售。  p=0.34  (LOW CONFIDENCE)
+------------------------------------------------------------------------
+accuracy: 6/6 = 100.0%   tentative beads: 6 (hits: 6)
+confident-only accuracy: 0/6 = 0.0%
+
+========================================================================
+OVERALL accuracy: 23/26 = 88.5%
+error distribution: boundary_shift=1, missed_deletion=1, missed_merge=1
