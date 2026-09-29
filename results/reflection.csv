@@ -1,0 +1,16 @@
+boundary,courant_r,sigma_over_dx,R_energy
+dirichlet,0.9,2.0,1
+dirichlet,0.9,4.0,1
+dirichlet,0.9,8.0,1
+dirichlet,0.9,16.0,1
+neumann,0.9,2.0,1
+neumann,0.9,4.0,1
+neumann,0.9,8.0,1
+neumann,0.9,16.0,1
+mur,0.9,2.0,4.532e-05
+mur,0.9,4.0,2.21971e-06
+mur,0.9,8.0,1.31398e-07
+mur,0.9,16.0,8.1044e-09
+mur,0.5,8.0,2.02713e-06
+mur,0.7,8.0,9.41334e-07
+mur,0.99,8.0,1.44581e-09
