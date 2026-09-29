@@ -1,0 +1,36 @@
+{"id": "s01", "direction": "s2t", "category": "pure_simplified", "source": "他走到门的后面。", "target": "他走到門的後面。"}
+{"id": "s02", "direction": "s2t", "category": "pure_simplified", "source": "皇后生下了王子。", "target": "皇后生下了王子。"}
+{"id": "s03", "direction": "s2t", "category": "pure_simplified", "source": "她的头发又黑又长。", "target": "她的頭髮又黑又長。"}
+{"id": "s04", "direction": "s2t", "category": "pure_simplified", "source": "这项发现很重要。", "target": "這項發現很重要。"}
+{"id": "s05", "direction": "s2t", "category": "pure_simplified", "source": "爷爷喜欢吃面条。", "target": "爺爺喜歡吃麵條。"}
+{"id": "s06", "direction": "s2t", "category": "pure_simplified", "source": "表面看起来很干净。", "target": "表面看起來很乾淨。"}
+{"id": "s07", "direction": "s2t", "category": "pure_simplified", "source": "一只鸟落在松树上。", "target": "一隻鳥落在松樹上。"}
+{"id": "s08", "direction": "s2t", "category": "pure_simplified", "source": "这里只有两个人。", "target": "這裡只有兩個人。"}
+{"id": "s09", "direction": "s2t", "category": "pure_simplified", "source": "他放松了心情。", "target": "他放鬆了心情。"}
+{"id": "s10", "direction": "s2t", "category": "pure_simplified", "source": "天上的白云像棉花。", "target": "天上的白雲像棉花。"}
+{"id": "s11", "direction": "s2t", "category": "pure_simplified", "source": "请在这里回复邮件。", "target": "請在這裡回復郵件。"}
+{"id": "s12", "direction": "s2t", "category": "pure_simplified", "source": "历史系的学生在复习。", "target": "歷史系的學生在複習。"}
+{"id": "s13", "direction": "s2t", "category": "pure_simplified", "source": "我买了一块手表。", "target": "我買了一塊手錶。"}
+{"id": "s14", "direction": "s2t", "category": "pure_simplified", "source": "厨房里有生姜和饼干。", "target": "廚房裡有生薑和餅乾。"}
+{"id": "s15", "direction": "s2t", "category": "pure_simplified", "source": "他从事理发行业。", "target": "他從事理髮行業。"}
+{"id": "p01", "direction": "s2t", "category": "proper_noun", "source": "于谦是明朝的名臣。", "target": "于謙是明朝的名臣。"}
+{"id": "p02", "direction": "s2t", "category": "proper_noun", "source": "周润发出演了新电影。", "target": "周潤發出演了新電影。"}
+{"id": "p03", "direction": "s2t", "category": "proper_noun", "source": "余秋雨写了一本书。", "target": "余秋雨寫了一本書。"}
+{"id": "p04", "direction": "s2t", "category": "proper_noun", "source": "姜子牙在渭水边钓鱼。", "target": "姜子牙在渭水邊釣魚。"}
+{"id": "p05", "direction": "s2t", "category": "proper_noun", "source": "范冰冰扮演过皇后。", "target": "范冰冰扮演過皇后。"}
+{"id": "t01", "direction": "t2s", "category": "pure_traditional", "source": "他走到門的後面。", "target": "他走到门的后面。"}
+{"id": "t02", "direction": "t2s", "category": "pure_traditional", "source": "皇后生下了王子。", "target": "皇后生下了王子。"}
+{"id": "t03", "direction": "t2s", "category": "pure_traditional", "source": "她的頭髮又黑又長。", "target": "她的头发又黑又长。"}
+{"id": "t04", "direction": "t2s", "category": "pure_traditional", "source": "這項發現很重要。", "target": "这项发现很重要。"}
+{"id": "t05", "direction": "t2s", "category": "pure_traditional", "source": "爺爺喜歡吃麵條。", "target": "爷爷喜欢吃面条。"}
+{"id": "t06", "direction": "t2s", "category": "pure_traditional", "source": "表面看起來很乾淨。", "target": "表面看起来很干净。"}
+{"id": "t07", "direction": "t2s", "category": "pure_traditional", "source": "乾隆皇帝喜歡書法。", "target": "乾隆皇帝喜欢书法。"}
+{"id": "t08", "direction": "t2s", "category": "pure_traditional", "source": "一隻鳥落在松樹上。", "target": "一只鸟落在松树上。"}
+{"id": "t09", "direction": "t2s", "category": "pure_traditional", "source": "這裡只有兩個人。", "target": "这里只有两个人。"}
+{"id": "t10", "direction": "t2s", "category": "pure_traditional", "source": "請在這裡回覆郵件。", "target": "请在这里回复邮件。"}
+{"id": "m01", "direction": "s2t", "category": "mixed", "source": "他在後面等我。", "target": "他在後面等我。"}
+{"id": "m02", "direction": "s2t", "category": "mixed", "source": "皇后说她頭髮长。", "target": "皇后說她頭髮長。"}
+{"id": "m03", "direction": "t2s", "category": "mixed", "source": "他的头发很長。", "target": "他的头发很长。"}
+{"id": "m04", "direction": "s2t", "category": "mixed", "source": "周潤發的头发白了。", "target": "周潤發的頭髮白了。"}
+{"id": "a01", "direction": "s2t", "category": "ambiguous", "source": "「后」的用法很多。", "target": "「后」的用法很多。", "expect_pending": ["后"]}
+{"id": "a02", "direction": "t2s", "category": "ambiguous", "source": "這個「乾」字有兩讀。", "target": "这个「乾」字有两读。", "expect_pending": ["乾"]}

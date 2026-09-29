@@ -1,0 +1,14 @@
+{"id": "e01", "direction": "s2t", "source": "", "expected": "", "expect_pending": [], "note": "空串"}
+{"id": "e02", "direction": "s2t", "source": "Hello 123!", "expected": "Hello 123!", "expect_pending": [], "note": "纯 ASCII 不受影响"}
+{"id": "e03", "direction": "s2t", "source": "后", "expected": "后", "expect_pending": ["后"], "note": "孤立歧义字：保留原字并标记待确认"}
+{"id": "e04", "direction": "s2t", "source": "後來", "expected": "後來", "expect_pending": [], "note": "已是繁体，s2t 下原样通过"}
+{"id": "e05", "direction": "s2t", "source": "加油！💪", "expected": "加油！💪", "expect_pending": [], "note": "标点与 emoji 原样保留"}
+{"id": "e06", "direction": "s2t", "source": "发展迅速", "expected": "發展迅速", "expect_pending": [], "note": "最长匹配：发展 优先于单字 发"}
+{"id": "e07", "direction": "s2t", "source": "后面", "expected": "後面", "expect_pending": [], "note": "词位于整串边界"}
+{"id": "e08", "direction": "s2t", "source": "前面\n后面", "expected": "前面\n後面", "expect_pending": [], "note": "换行符保留且不影响匹配"}
+{"id": "e09", "direction": "s2t", "source": "余秋雨来了。", "expected": "余秋雨來了。", "expect_pending": [], "note": "专名中的 余 不转 餘"}
+{"id": "e10", "direction": "t2s", "source": "干", "expected": "干", "expect_pending": [], "note": "已是简体，t2s 下原样通过"}
+{"id": "e11", "direction": "t2s", "source": "乾杯！", "expected": "干杯！", "expect_pending": [], "note": "t2s 一对多由词表消解"}
+{"id": "e12", "direction": "s2t", "source": "干后", "expected": "干后", "expect_pending": ["干", "后"], "note": "连续两个无法消解的歧义字都标记"}
+{"id": "e13", "direction": "s2t", "source": "他在後面等我。", "expected": "他在後面等我。", "expect_pending": [], "note": "简繁混排：繁体词受保护不误转"}
+{"id": "e14", "direction": "t2s", "source": "這個「乾」字", "expected": "这个「乾」字", "expect_pending": ["乾"], "note": "句中孤立歧义字：其余照常转换"}
