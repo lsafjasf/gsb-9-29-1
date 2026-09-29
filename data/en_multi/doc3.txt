@@ -1,0 +1,7 @@
+NoSQL systems relax the relational model to gain horizontal scalability,
+and a NoSQL system can serve simple workloads at very low cost. A document
+store keeps JSON documents instead of rows, while a key-value store offers
+only primary-key access. Query optimization in NoSQL systems is usually
+manual, because there is no query optimizer to rewrite the plan. The
+buffer pool caches hot pages in memory, and buffer pool sizing is a
+classic tuning problem for both relational database and NoSQL deployments.

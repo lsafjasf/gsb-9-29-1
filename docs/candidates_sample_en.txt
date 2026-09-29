@@ -1,0 +1,17 @@
+candidate                               fq    cval   lent   rent  stick  full   score
+Large language models                    2     4.0    0.0  1.918 10.095     Y  3.7887
+Bidirectional Encoder                    2    3.17  1.918  1.918   6.34     Y  3.2514
+support vector machines                  2     4.0  0.918  0.918  12.68     Y  3.2426
+word embeddings                          2    3.17  1.522  1.918   6.34     Y  3.1001
+NLP                                      4     4.0   2.25   2.25    0.0     Y  2.7685
+Machine learning                         2    3.17  0.918  1.918   6.34     Y  2.7495
+neural network                           2    3.17  0.971  1.918   5.34     Y  2.7447
+data preprocessing                       2    3.17  1.522  0.918  5.755     Y  2.7258
+neural networks                          2    3.17  1.522  0.918   5.34     Y  2.7062
+deep                                     3     3.0  1.918   2.25    0.0     Y  2.3147
+models                                   6     2.0   3.17   3.24    0.0     Y  1.9973
+Natural language processing              2     4.0   -0.0  0.918  11.68     Y  1.6499
+Transformer                              2     2.0    1.0  1.918    0.0     Y   1.585
+data                                     3     1.0   2.25   1.75    0.0     Y  1.1364
+BERT                                     2     2.0    0.0    0.0    0.0     Y  0.7925
+SVMs                                     2     2.0   -0.0  1.918    0.0     Y  0.7925

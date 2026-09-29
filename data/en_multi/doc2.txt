@@ -1,0 +1,6 @@
+Transactions give a database its correctness guarantees. Transaction
+isolation levels trade consistency for concurrency, and transaction
+isolation anomalies such as dirty reads must be understood by application
+developers. The ACID properties (atomicity, consistency, isolation,
+durability) describe what a transaction promises. Write-ahead logging (WAL)
+makes durability cheap: the WAL is flushed before data pages are written.

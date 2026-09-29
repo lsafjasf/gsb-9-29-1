@@ -1,0 +1,26 @@
+Natural language processing (NLP) has changed rapidly in the last decade.
+Early NLP systems relied on hand-crafted features and shallow classifiers
+such as support vector machines. Support vector machines were strong
+baselines for text classification, but they could not capture long-range
+context. SVMs remain competitive on small datasets, and SVMs need little
+tuning compared with deep models. The introduction of word embeddings made
+distributed semantics practical, and word embeddings remain a standard
+input representation.
+
+Modern natural language processing is dominated by neural networks. A
+neural network trained with gradient descent can learn features directly
+from raw text, and a second neural network can refine them. Deep neural
+networks with many layers outperform shallow models on most benchmarks.
+The Transformer architecture replaced recurrent designs in almost every
+NLP task, and Transformer models now define the state of the art. BERT,
+short for Bidirectional Encoder Representations from Transformers (BERT),
+showed that pre-training a deep bidirectional encoder transfers well to
+downstream tasks. Large language models extend this idea: large language
+models are pre-trained on massive corpora and then adapted by fine-tuning
+or prompting.
+
+Machine learning pipelines for NLP still depend on careful data
+preprocessing. Tokenization, normalization, and data preprocessing choices
+strongly affect downstream accuracy. Evaluation of machine learning models
+uses held-out test sets, and cross validation remains common when labeled
+data is scarce.

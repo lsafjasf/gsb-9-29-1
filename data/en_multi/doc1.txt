@@ -1,0 +1,6 @@
+A relational database stores data in tables with a fixed schema. Most
+relational database systems accept SQL queries and compile them into
+execution plans. The query optimizer rewrites SQL queries to reduce cost,
+and query optimization is the main reason declarative languages scale.
+A B-tree index accelerates point lookups, and almost every relational
+database ships with a B-tree index implementation.
