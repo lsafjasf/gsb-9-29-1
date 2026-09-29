@@ -1,0 +1,231 @@
+{
+  "description": "变体检出用例：每条包含至少一个被刻意混淆的词典词。expect_ids 为预期命中文案。",
+  "cases": [
+    {
+      "name": "精确匹配-基线",
+      "text": "网络赌博害人不浅",
+      "expect_ids": [
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "符号插入",
+      "text": "赌#博网站",
+      "expect_ids": [
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "纯符号干扰-多符号",
+      "text": "赌★☆※博",
+      "expect_ids": [
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "emoji插入",
+      "text": "严禁赌🎲博活动",
+      "expect_ids": [
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "零宽字符-ZWSP",
+      "text": "赌​博",
+      "expect_ids": [
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "零宽字符混合",
+      "text": "赌​‌博",
+      "expect_ids": [
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "谐音替换-双字",
+      "text": "堵搏群",
+      "expect_ids": [
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "谐音加符号",
+      "text": "堵#搏",
+      "expect_ids": [
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "连续谐音",
+      "text": "堵薄、肚驳都要抓",
+      "expect_ids": [
+        "DU_BO",
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "拆字-赌",
+      "text": "贝者十专害人",
+      "expect_ids": [
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "拆字-双字",
+      "text": "贝者十专一条龙",
+      "expect_ids": [
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "拆字枪支",
+      "text": "私藏木仓十又违法",
+      "expect_ids": [
+        "QIANG_ZHI"
+      ]
+    },
+    {
+      "name": "拆字海洛因",
+      "text": "氵每氵各囗大",
+      "expect_ids": [
+        "HAILUOYIN"
+      ]
+    },
+    {
+      "name": "拆字诈骗",
+      "text": "遇到诈+马扁套路要警惕",
+      "expect_ids": [
+        "ZHA_PIAN"
+      ]
+    },
+    {
+      "name": "拼音中文混排",
+      "text": "du博网站",
+      "expect_ids": [
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "拼音跨符号",
+      "text": "du-bo 平台",
+      "expect_ids": [
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "连续拼音",
+      "text": "du-bo",
+      "expect_ids": [
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "拼音大写跨符号",
+      "text": "ZHA-PIAN 电话",
+      "expect_ids": [
+        "ZHA_PIAN"
+      ]
+    },
+    {
+      "name": "中英混排-leet",
+      "text": "buy drug5@home 渠道",
+      "expect_ids": [
+        "DRUGS"
+      ]
+    },
+    {
+      "name": "中英混排-leet符号",
+      "text": "drug#5渠道",
+      "expect_ids": [
+        "DRUGS"
+      ]
+    },
+    {
+      "name": "全角英文",
+      "text": "ＤＲＵＧＳ包邮",
+      "expect_ids": [
+        "DRUGS"
+      ]
+    },
+    {
+      "name": "大小写混合",
+      "text": "DrUgS deal",
+      "expect_ids": [
+        "DRUGS"
+      ]
+    },
+    {
+      "name": "重复字符折叠",
+      "text": "堵堵堵博",
+      "expect_ids": [
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "综合绕过",
+      "text": "网#上 d​u-博 广告泛滥",
+      "expect_ids": [
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "谐音海洛因",
+      "text": "海洛茵也属于毒品",
+      "expect_ids": [
+        "HAILUOYIN"
+      ]
+    },
+    {
+      "name": "谐音加拆字",
+      "text": "海氵各茵交易",
+      "expect_ids": [
+        "HAILUOYIN"
+      ]
+    },
+    {
+      "name": "诈骗谐音",
+      "text": "诈片电话要举报",
+      "expect_ids": [
+        "ZHA_PIAN"
+      ]
+    },
+    {
+      "name": "拼音加汉字",
+      "text": "zha骗短信",
+      "expect_ids": [
+        "ZHA_PIAN"
+      ]
+    },
+    {
+      "name": "大写拼音中文",
+      "text": "DU***博群被端",
+      "expect_ids": [
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "超长重复干扰",
+      "text": "赌！！！！博",
+      "expect_ids": [
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "多个命中",
+      "text": "一边堵搏一边卖drug5@qq",
+      "expect_ids": [
+        "DU_BO",
+        "DRUGS"
+      ]
+    },
+    {
+      "name": "leet无符号",
+      "text": "drug5交易",
+      "expect_ids": [
+        "DRUGS"
+      ]
+    }
+  ]
+}

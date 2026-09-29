@@ -1,0 +1,172 @@
+[
+  {
+    "name": "精确匹配-基线",
+    "text": "网络赌博害人不浅",
+    "normalized": "网络赌博害人不浅",
+    "ok": true,
+    "expect_ids": [
+      "DU_BO"
+    ],
+    "got_ids": [
+      "DU_BO"
+    ],
+    "matches": [
+      {
+        "entry_id": "DU_BO",
+        "category": "违禁行为",
+        "word": "赌博",
+        "start": 2,
+        "end": 4,
+        "matched_text": "赌博",
+        "normalized_text": "赌博",
+        "confidence": "exact",
+        "rules": [
+          "lexicon:DU_BO(违禁行为)"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "符号插入",
+    "text": "赌#博网站",
+    "normalized": "赌博网站",
+    "ok": true,
+    "expect_ids": [
+      "DU_BO"
+    ],
+    "got_ids": [
+      "DU_BO"
+    ],
+    "matches": [
+      {
+        "entry_id": "DU_BO",
+        "category": "违禁行为",
+        "word": "赌博",
+        "start": 0,
+        "end": 3,
+        "matched_text": "赌#博",
+        "normalized_text": "赌博",
+        "confidence": "high",
+        "rules": [
+          "lexicon:DU_BO(违禁行为)",
+          "strip:#"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "纯符号干扰-多符号",
+    "text": "赌★☆※博",
+    "normalized": "赌博",
+    "ok": true,
+    "expect_ids": [
+      "DU_BO"
+    ],
+    "got_ids": [
+      "DU_BO"
+    ],
+    "matches": [
+      {
+        "entry_id": "DU_BO",
+        "category": "违禁行为",
+        "word": "赌博",
+        "start": 0,
+        "end": 5,
+        "matched_text": "赌★☆※博",
+        "normalized_text": "赌博",
+        "confidence": "high",
+        "rules": [
+          "lexicon:DU_BO(违禁行为)",
+          "strip:★",
+          "strip:☆",
+          "strip:※"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "emoji插入",
+    "text": "严禁赌🎲博活动",
+    "normalized": "严禁赌博活动",
+    "ok": true,
+    "expect_ids": [
+      "DU_BO"
+    ],
+    "got_ids": [
+      "DU_BO"
+    ],
+    "matches": [
+      {
+        "entry_id": "DU_BO",
+        "category": "违禁行为",
+        "word": "赌博",
+        "start": 2,
+        "end": 5,
+        "matched_text": "赌🎲博",
+        "normalized_text": "赌博",
+        "confidence": "high",
+        "rules": [
+          "lexicon:DU_BO(违禁行为)",
+          "strip:🎲"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "零宽字符-ZWSP",
+    "text": "赌​博",
+    "normalized": "赌博",
+    "ok": true,
+    "expect_ids": [
+      "DU_BO"
+    ],
+    "got_ids": [
+      "DU_BO"
+    ],
+    "matches": [
+      {
+        "entry_id": "DU_BO",
+        "category": "违禁行为",
+        "word": "赌博",
+        "start": 0,
+        "end": 3,
+        "matched_text": "赌​博",
+        "normalized_text": "赌博",
+        "confidence": "high",
+        "rules": [
+          "lexicon:DU_BO(违禁行为)",
+          "strip:ZWSP"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "零宽字符混合",
+    "text": "赌​‌博",
+    "normalized": "赌博",
+    "ok": true,
+    "expect_ids": [
+      "DU_BO"
+    ],
+    "got_ids": [
+      "DU_BO"
+    ],
+    "matches": [
+      {
+        "entry_id": "DU_BO",
+        "category": "违禁行为",
+        "word": "赌博",
+        "start": 0,
+        "end": 4,
+        "matched_text": "赌​‌博",
+        "normalized_text": "赌博",
+        "confidence": "high",
+        "rules": [
+          "lexicon:DU_BO(违禁行为)",
+          "strip:ZWSP",
+          "strip:ZWNJ"
+        ]
+      }
+    ]
+  }
+]

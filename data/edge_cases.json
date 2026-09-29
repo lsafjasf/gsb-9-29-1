@@ -1,0 +1,103 @@
+{
+  "description": "边界用例：空输入、纯噪声、近义混淆、白名单、超长文本等。",
+  "cases": [
+    {
+      "name": "空字符串",
+      "text": "",
+      "expect_ids": []
+    },
+    {
+      "name": "纯空白",
+      "text": "   \t\n  ",
+      "expect_ids": []
+    },
+    {
+      "name": "纯符号",
+      "text": "★☆※！@#￥%……&*（）",
+      "expect_ids": []
+    },
+    {
+      "name": "只有半个词-赌",
+      "text": "今天打赌赢了一顿饭",
+      "expect_ids": []
+    },
+    {
+      "name": "只有半个词-博",
+      "text": "他读了很多博",
+      "expect_ids": []
+    },
+    {
+      "name": "拆字不成词",
+      "text": "这个木仓库存放木材",
+      "expect_ids": []
+    },
+    {
+      "name": "英文单词粘连误触",
+      "text": "during the boring meeting",
+      "expect_ids": []
+    },
+    {
+      "name": "英文数字正常文本",
+      "text": "总价 13579 元，联系 110 号客服",
+      "expect_ids": []
+    },
+    {
+      "name": "拉丁字母间空格保留",
+      "text": "d r u g s are letters with spaces",
+      "expect_ids": []
+    },
+    {
+      "name": "白名单-产品名",
+      "text": "柚木仓支柱承重可达两百斤",
+      "expect_ids": []
+    },
+    {
+      "name": "白名单不掩盖真实违规",
+      "text": "柚木仓支柱 旁边有人赌#博",
+      "expect_ids": [
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "表情与零宽混合无违规",
+      "text": "今天天气不错 😀​ 适合散步",
+      "expect_ids": []
+    },
+    {
+      "name": "标点全角正常句",
+      "text": "您好！请问需要什么帮助？",
+      "expect_ids": []
+    },
+    {
+      "name": "重叠正常词",
+      "text": "一片片叶子落下来",
+      "expect_ids": []
+    },
+    {
+      "name": "超长正常文本无命中",
+      "text_repeat": "今天天气很好适合出门散步。",
+      "repeat": 20000,
+      "expect_ids": []
+    },
+    {
+      "name": "超长文本末尾藏违规",
+      "text_prefix": "正常内容。",
+      "prefix_repeat": 20000,
+      "text": "最后出现赌​博广告",
+      "expect_ids": [
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "超长文本多处违规",
+      "text": "开头堵搏。",
+      "middle": "中间都是正常的流水账内容。",
+      "middle_repeat": 10000,
+      "tail": "结尾 drug5@qq。",
+      "expect_ids": [
+        "DU_BO",
+        "DRUGS"
+      ]
+    }
+  ]
+}

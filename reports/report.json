@@ -1,0 +1,1183 @@
+{
+  "summary": {
+    "variant_cases": 32,
+    "variant_detected": 32,
+    "variant_recall": 1.0,
+    "benign_sentences": 174,
+    "false_positives_per_sentence": 0,
+    "false_positive_rate": 0.0,
+    "false_positive_rate_pct": 0.0,
+    "rule_of_three_upper_bound_pct_95conf": 1.72,
+    "false_positives_joined_corpus": 0,
+    "edge_cases": 17,
+    "edge_passed": 17
+  },
+  "variant_cases": [
+    {
+      "name": "精确匹配-基线",
+      "text": "网络赌博害人不浅",
+      "normalized": "网络赌博害人不浅",
+      "ok": true,
+      "expect_ids": [
+        "DU_BO"
+      ],
+      "got_ids": [
+        "DU_BO"
+      ],
+      "matches": [
+        {
+          "entry_id": "DU_BO",
+          "category": "违禁行为",
+          "word": "赌博",
+          "start": 2,
+          "end": 4,
+          "matched_text": "赌博",
+          "normalized_text": "赌博",
+          "confidence": "exact",
+          "rules": [
+            "lexicon:DU_BO(违禁行为)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "符号插入",
+      "text": "赌#博网站",
+      "normalized": "赌博网站",
+      "ok": true,
+      "expect_ids": [
+        "DU_BO"
+      ],
+      "got_ids": [
+        "DU_BO"
+      ],
+      "matches": [
+        {
+          "entry_id": "DU_BO",
+          "category": "违禁行为",
+          "word": "赌博",
+          "start": 0,
+          "end": 3,
+          "matched_text": "赌#博",
+          "normalized_text": "赌博",
+          "confidence": "high",
+          "rules": [
+            "lexicon:DU_BO(违禁行为)",
+            "strip:#"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "纯符号干扰-多符号",
+      "text": "赌★☆※博",
+      "normalized": "赌博",
+      "ok": true,
+      "expect_ids": [
+        "DU_BO"
+      ],
+      "got_ids": [
+        "DU_BO"
+      ],
+      "matches": [
+        {
+          "entry_id": "DU_BO",
+          "category": "违禁行为",
+          "word": "赌博",
+          "start": 0,
+          "end": 5,
+          "matched_text": "赌★☆※博",
+          "normalized_text": "赌博",
+          "confidence": "high",
+          "rules": [
+            "lexicon:DU_BO(违禁行为)",
+            "strip:★",
+            "strip:☆",
+            "strip:※"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "emoji插入",
+      "text": "严禁赌🎲博活动",
+      "normalized": "严禁赌博活动",
+      "ok": true,
+      "expect_ids": [
+        "DU_BO"
+      ],
+      "got_ids": [
+        "DU_BO"
+      ],
+      "matches": [
+        {
+          "entry_id": "DU_BO",
+          "category": "违禁行为",
+          "word": "赌博",
+          "start": 2,
+          "end": 5,
+          "matched_text": "赌🎲博",
+          "normalized_text": "赌博",
+          "confidence": "high",
+          "rules": [
+            "lexicon:DU_BO(违禁行为)",
+            "strip:🎲"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "零宽字符-ZWSP",
+      "text": "赌​博",
+      "normalized": "赌博",
+      "ok": true,
+      "expect_ids": [
+        "DU_BO"
+      ],
+      "got_ids": [
+        "DU_BO"
+      ],
+      "matches": [
+        {
+          "entry_id": "DU_BO",
+          "category": "违禁行为",
+          "word": "赌博",
+          "start": 0,
+          "end": 3,
+          "matched_text": "赌​博",
+          "normalized_text": "赌博",
+          "confidence": "high",
+          "rules": [
+            "lexicon:DU_BO(违禁行为)",
+            "strip:ZWSP"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "零宽字符混合",
+      "text": "赌​‌博",
+      "normalized": "赌博",
+      "ok": true,
+      "expect_ids": [
+        "DU_BO"
+      ],
+      "got_ids": [
+        "DU_BO"
+      ],
+      "matches": [
+        {
+          "entry_id": "DU_BO",
+          "category": "违禁行为",
+          "word": "赌博",
+          "start": 0,
+          "end": 4,
+          "matched_text": "赌​‌博",
+          "normalized_text": "赌博",
+          "confidence": "high",
+          "rules": [
+            "lexicon:DU_BO(违禁行为)",
+            "strip:ZWSP",
+            "strip:ZWNJ"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "谐音替换-双字",
+      "text": "堵搏群",
+      "normalized": "赌博群",
+      "ok": true,
+      "expect_ids": [
+        "DU_BO"
+      ],
+      "got_ids": [
+        "DU_BO"
+      ],
+      "matches": [
+        {
+          "entry_id": "DU_BO",
+          "category": "违禁行为",
+          "word": "赌博",
+          "start": 0,
+          "end": 2,
+          "matched_text": "堵搏",
+          "normalized_text": "赌博",
+          "confidence": "medium",
+          "rules": [
+            "lexicon:DU_BO(违禁行为)",
+            "char:map:堵->赌",
+            "char:map:搏->博"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "谐音加符号",
+      "text": "堵#搏",
+      "normalized": "赌博",
+      "ok": true,
+      "expect_ids": [
+        "DU_BO"
+      ],
+      "got_ids": [
+        "DU_BO"
+      ],
+      "matches": [
+        {
+          "entry_id": "DU_BO",
+          "category": "违禁行为",
+          "word": "赌博",
+          "start": 0,
+          "end": 3,
+          "matched_text": "堵#搏",
+          "normalized_text": "赌博",
+          "confidence": "medium",
+          "rules": [
+            "lexicon:DU_BO(违禁行为)",
+            "char:map:堵->赌",
+            "strip:#",
+            "char:map:搏->博"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "连续谐音",
+      "text": "堵薄、肚驳都要抓",
+      "normalized": "赌博赌博都要抓",
+      "ok": true,
+      "expect_ids": [
+        "DU_BO",
+        "DU_BO"
+      ],
+      "got_ids": [
+        "DU_BO",
+        "DU_BO"
+      ],
+      "matches": [
+        {
+          "entry_id": "DU_BO",
+          "category": "违禁行为",
+          "word": "赌博",
+          "start": 0,
+          "end": 2,
+          "matched_text": "堵薄",
+          "normalized_text": "赌博",
+          "confidence": "medium",
+          "rules": [
+            "lexicon:DU_BO(违禁行为)",
+            "char:map:堵->赌",
+            "char:map:薄->博"
+          ]
+        },
+        {
+          "entry_id": "DU_BO",
+          "category": "违禁行为",
+          "word": "赌博",
+          "start": 3,
+          "end": 5,
+          "matched_text": "肚驳",
+          "normalized_text": "赌博",
+          "confidence": "medium",
+          "rules": [
+            "lexicon:DU_BO(违禁行为)",
+            "char:map:肚->赌",
+            "char:map:驳->博"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "拆字-赌",
+      "text": "贝者十专害人",
+      "normalized": "赌博害人",
+      "ok": true,
+      "expect_ids": [
+        "DU_BO"
+      ],
+      "got_ids": [
+        "DU_BO"
+      ],
+      "matches": [
+        {
+          "entry_id": "DU_BO",
+          "category": "违禁行为",
+          "word": "赌博",
+          "start": 0,
+          "end": 4,
+          "matched_text": "贝者十专",
+          "normalized_text": "赌博",
+          "confidence": "low",
+          "rules": [
+            "lexicon:DU_BO(违禁行为)",
+            "sequence:split:贝者=赌",
+            "sequence:split:十专=博"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "拆字-双字",
+      "text": "贝者十专一条龙",
+      "normalized": "赌博一条龙",
+      "ok": true,
+      "expect_ids": [
+        "DU_BO"
+      ],
+      "got_ids": [
+        "DU_BO"
+      ],
+      "matches": [
+        {
+          "entry_id": "DU_BO",
+          "category": "违禁行为",
+          "word": "赌博",
+          "start": 0,
+          "end": 4,
+          "matched_text": "贝者十专",
+          "normalized_text": "赌博",
+          "confidence": "low",
+          "rules": [
+            "lexicon:DU_BO(违禁行为)",
+            "sequence:split:贝者=赌",
+            "sequence:split:十专=博"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "拆字枪支",
+      "text": "私藏木仓十又违法",
+      "normalized": "私藏枪支违法",
+      "ok": true,
+      "expect_ids": [
+        "QIANG_ZHI"
+      ],
+      "got_ids": [
+        "QIANG_ZHI"
+      ],
+      "matches": [
+        {
+          "entry_id": "QIANG_ZHI",
+          "category": "违禁品",
+          "word": "枪支",
+          "start": 2,
+          "end": 6,
+          "matched_text": "木仓十又",
+          "normalized_text": "枪支",
+          "confidence": "low",
+          "rules": [
+            "lexicon:QIANG_ZHI(违禁品)",
+            "sequence:split:木仓=枪",
+            "sequence:split:十又=支"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "拆字海洛因",
+      "text": "氵每氵各囗大",
+      "normalized": "海洛因",
+      "ok": true,
+      "expect_ids": [
+        "HAILUOYIN"
+      ],
+      "got_ids": [
+        "HAILUOYIN"
+      ],
+      "matches": [
+        {
+          "entry_id": "HAILUOYIN",
+          "category": "违禁品",
+          "word": "海洛因",
+          "start": 0,
+          "end": 6,
+          "matched_text": "氵每氵各囗大",
+          "normalized_text": "海洛因",
+          "confidence": "low",
+          "rules": [
+            "lexicon:HAILUOYIN(违禁品)",
+            "sequence:split:氵每=海",
+            "sequence:split:氵各=洛",
+            "sequence:split:囗大=因"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "拆字诈骗",
+      "text": "遇到诈+马扁套路要警惕",
+      "normalized": "遇到诈骗套路要警惕",
+      "ok": true,
+      "expect_ids": [
+        "ZHA_PIAN"
+      ],
+      "got_ids": [
+        "ZHA_PIAN"
+      ],
+      "matches": [
+        {
+          "entry_id": "ZHA_PIAN",
+          "category": "违禁行为",
+          "word": "诈骗",
+          "start": 2,
+          "end": 6,
+          "matched_text": "诈+马扁",
+          "normalized_text": "诈骗",
+          "confidence": "low",
+          "rules": [
+            "lexicon:ZHA_PIAN(违禁行为)",
+            "strip:+",
+            "sequence:split:马扁=骗"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "拼音中文混排",
+      "text": "du博网站",
+      "normalized": "赌博网站",
+      "ok": true,
+      "expect_ids": [
+        "DU_BO"
+      ],
+      "got_ids": [
+        "DU_BO"
+      ],
+      "matches": [
+        {
+          "entry_id": "DU_BO",
+          "category": "违禁行为",
+          "word": "赌博",
+          "start": 0,
+          "end": 3,
+          "matched_text": "du博",
+          "normalized_text": "赌博",
+          "confidence": "low",
+          "rules": [
+            "lexicon:DU_BO(违禁行为)",
+            "sequence:pinyin:du=赌"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "拼音跨符号",
+      "text": "du-bo 平台",
+      "normalized": "赌博平台",
+      "ok": true,
+      "expect_ids": [
+        "DU_BO"
+      ],
+      "got_ids": [
+        "DU_BO"
+      ],
+      "matches": [
+        {
+          "entry_id": "DU_BO",
+          "category": "违禁行为",
+          "word": "赌博",
+          "start": 0,
+          "end": 5,
+          "matched_text": "du-bo",
+          "normalized_text": "赌博",
+          "confidence": "low",
+          "rules": [
+            "lexicon:DU_BO(违禁行为)",
+            "sequence:pinyin:du=赌",
+            "strip:-",
+            "sequence:pinyin:bo=博"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "连续拼音",
+      "text": "du-bo",
+      "normalized": "赌博",
+      "ok": true,
+      "expect_ids": [
+        "DU_BO"
+      ],
+      "got_ids": [
+        "DU_BO"
+      ],
+      "matches": [
+        {
+          "entry_id": "DU_BO",
+          "category": "违禁行为",
+          "word": "赌博",
+          "start": 0,
+          "end": 5,
+          "matched_text": "du-bo",
+          "normalized_text": "赌博",
+          "confidence": "low",
+          "rules": [
+            "lexicon:DU_BO(违禁行为)",
+            "sequence:pinyin:du=赌",
+            "strip:-",
+            "sequence:pinyin:bo=博"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "拼音大写跨符号",
+      "text": "ZHA-PIAN 电话",
+      "normalized": "诈骗电话",
+      "ok": true,
+      "expect_ids": [
+        "ZHA_PIAN"
+      ],
+      "got_ids": [
+        "ZHA_PIAN"
+      ],
+      "matches": [
+        {
+          "entry_id": "ZHA_PIAN",
+          "category": "违禁行为",
+          "word": "诈骗",
+          "start": 0,
+          "end": 8,
+          "matched_text": "ZHA-PIAN",
+          "normalized_text": "诈骗",
+          "confidence": "low",
+          "rules": [
+            "lexicon:ZHA_PIAN(违禁行为)",
+            "shape:fold:Z->z",
+            "sequence:pinyin:zha=诈",
+            "shape:fold:H->h",
+            "shape:fold:A->a",
+            "strip:-",
+            "shape:fold:P->p",
+            "sequence:pinyin:pian=骗",
+            "shape:fold:I->i",
+            "shape:fold:N->n"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "中英混排-leet",
+      "text": "buy drug5@home 渠道",
+      "normalized": "buy drugsahome 渠道",
+      "ok": true,
+      "expect_ids": [
+        "DRUGS"
+      ],
+      "got_ids": [
+        "DRUGS"
+      ],
+      "matches": [
+        {
+          "entry_id": "DRUGS",
+          "category": "违禁品",
+          "word": "drugs",
+          "start": 4,
+          "end": 9,
+          "matched_text": "drug5",
+          "normalized_text": "drugs",
+          "confidence": "medium",
+          "rules": [
+            "lexicon:DRUGS(违禁品)",
+            "char:map:5->s"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "中英混排-leet符号",
+      "text": "drug#5渠道",
+      "normalized": "drugs渠道",
+      "ok": true,
+      "expect_ids": [
+        "DRUGS"
+      ],
+      "got_ids": [
+        "DRUGS"
+      ],
+      "matches": [
+        {
+          "entry_id": "DRUGS",
+          "category": "违禁品",
+          "word": "drugs",
+          "start": 0,
+          "end": 6,
+          "matched_text": "drug#5",
+          "normalized_text": "drugs",
+          "confidence": "medium",
+          "rules": [
+            "lexicon:DRUGS(违禁品)",
+            "strip:#",
+            "char:map:5->s"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "全角英文",
+      "text": "ＤＲＵＧＳ包邮",
+      "normalized": "drugs包邮",
+      "ok": true,
+      "expect_ids": [
+        "DRUGS"
+      ],
+      "got_ids": [
+        "DRUGS"
+      ],
+      "matches": [
+        {
+          "entry_id": "DRUGS",
+          "category": "违禁品",
+          "word": "drugs",
+          "start": 0,
+          "end": 5,
+          "matched_text": "ＤＲＵＧＳ",
+          "normalized_text": "drugs",
+          "confidence": "high",
+          "rules": [
+            "lexicon:DRUGS(违禁品)",
+            "shape:fold:Ｄ->d",
+            "shape:fold:Ｒ->r",
+            "shape:fold:Ｕ->u",
+            "shape:fold:Ｇ->g",
+            "shape:fold:Ｓ->s"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "大小写混合",
+      "text": "DrUgS deal",
+      "normalized": "drugs deal",
+      "ok": true,
+      "expect_ids": [
+        "DRUGS"
+      ],
+      "got_ids": [
+        "DRUGS"
+      ],
+      "matches": [
+        {
+          "entry_id": "DRUGS",
+          "category": "违禁品",
+          "word": "drugs",
+          "start": 0,
+          "end": 5,
+          "matched_text": "DrUgS",
+          "normalized_text": "drugs",
+          "confidence": "high",
+          "rules": [
+            "lexicon:DRUGS(违禁品)",
+            "shape:fold:D->d",
+            "shape:fold:U->u",
+            "shape:fold:S->s"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "重复字符折叠",
+      "text": "堵堵堵博",
+      "normalized": "赌博",
+      "ok": true,
+      "expect_ids": [
+        "DU_BO"
+      ],
+      "got_ids": [
+        "DU_BO"
+      ],
+      "matches": [
+        {
+          "entry_id": "DU_BO",
+          "category": "违禁行为",
+          "word": "赌博",
+          "start": 0,
+          "end": 4,
+          "matched_text": "堵堵堵博",
+          "normalized_text": "赌博",
+          "confidence": "medium",
+          "rules": [
+            "lexicon:DU_BO(违禁行为)",
+            "char:map:堵->赌",
+            "collapse:堵 x3"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "综合绕过",
+      "text": "网#上 d​u-博 广告泛滥",
+      "normalized": "网上赌博广告泛滥",
+      "ok": true,
+      "expect_ids": [
+        "DU_BO"
+      ],
+      "got_ids": [
+        "DU_BO"
+      ],
+      "matches": [
+        {
+          "entry_id": "DU_BO",
+          "category": "违禁行为",
+          "word": "赌博",
+          "start": 4,
+          "end": 9,
+          "matched_text": "d​u-博",
+          "normalized_text": "赌博",
+          "confidence": "low",
+          "rules": [
+            "lexicon:DU_BO(违禁行为)",
+            "sequence:pinyin:du=赌",
+            "strip:ZWSP",
+            "strip:-"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "谐音海洛因",
+      "text": "海洛茵也属于毒品",
+      "normalized": "海洛因也属于毒品",
+      "ok": true,
+      "expect_ids": [
+        "HAILUOYIN"
+      ],
+      "got_ids": [
+        "HAILUOYIN"
+      ],
+      "matches": [
+        {
+          "entry_id": "HAILUOYIN",
+          "category": "违禁品",
+          "word": "海洛因",
+          "start": 0,
+          "end": 3,
+          "matched_text": "海洛茵",
+          "normalized_text": "海洛因",
+          "confidence": "medium",
+          "rules": [
+            "lexicon:HAILUOYIN(违禁品)",
+            "char:map:茵->因"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "谐音加拆字",
+      "text": "海氵各茵交易",
+      "normalized": "海洛因交易",
+      "ok": true,
+      "expect_ids": [
+        "HAILUOYIN"
+      ],
+      "got_ids": [
+        "HAILUOYIN"
+      ],
+      "matches": [
+        {
+          "entry_id": "HAILUOYIN",
+          "category": "违禁品",
+          "word": "海洛因",
+          "start": 0,
+          "end": 4,
+          "matched_text": "海氵各茵",
+          "normalized_text": "海洛因",
+          "confidence": "low",
+          "rules": [
+            "lexicon:HAILUOYIN(违禁品)",
+            "sequence:split:氵各=洛",
+            "char:map:茵->因"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "诈骗谐音",
+      "text": "诈片电话要举报",
+      "normalized": "诈骗电话要举报",
+      "ok": true,
+      "expect_ids": [
+        "ZHA_PIAN"
+      ],
+      "got_ids": [
+        "ZHA_PIAN"
+      ],
+      "matches": [
+        {
+          "entry_id": "ZHA_PIAN",
+          "category": "违禁行为",
+          "word": "诈骗",
+          "start": 0,
+          "end": 2,
+          "matched_text": "诈片",
+          "normalized_text": "诈骗",
+          "confidence": "medium",
+          "rules": [
+            "lexicon:ZHA_PIAN(违禁行为)",
+            "char:map:片->骗"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "拼音加汉字",
+      "text": "zha骗短信",
+      "normalized": "诈骗短信",
+      "ok": true,
+      "expect_ids": [
+        "ZHA_PIAN"
+      ],
+      "got_ids": [
+        "ZHA_PIAN"
+      ],
+      "matches": [
+        {
+          "entry_id": "ZHA_PIAN",
+          "category": "违禁行为",
+          "word": "诈骗",
+          "start": 0,
+          "end": 4,
+          "matched_text": "zha骗",
+          "normalized_text": "诈骗",
+          "confidence": "low",
+          "rules": [
+            "lexicon:ZHA_PIAN(违禁行为)",
+            "sequence:pinyin:zha=诈"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "大写拼音中文",
+      "text": "DU***博群被端",
+      "normalized": "赌博群被端",
+      "ok": true,
+      "expect_ids": [
+        "DU_BO"
+      ],
+      "got_ids": [
+        "DU_BO"
+      ],
+      "matches": [
+        {
+          "entry_id": "DU_BO",
+          "category": "违禁行为",
+          "word": "赌博",
+          "start": 0,
+          "end": 6,
+          "matched_text": "DU***博",
+          "normalized_text": "赌博",
+          "confidence": "low",
+          "rules": [
+            "lexicon:DU_BO(违禁行为)",
+            "shape:fold:D->d",
+            "sequence:pinyin:du=赌",
+            "shape:fold:U->u",
+            "strip:*"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "超长重复干扰",
+      "text": "赌！！！！博",
+      "normalized": "赌博",
+      "ok": true,
+      "expect_ids": [
+        "DU_BO"
+      ],
+      "got_ids": [
+        "DU_BO"
+      ],
+      "matches": [
+        {
+          "entry_id": "DU_BO",
+          "category": "违禁行为",
+          "word": "赌博",
+          "start": 0,
+          "end": 6,
+          "matched_text": "赌！！！！博",
+          "normalized_text": "赌博",
+          "confidence": "high",
+          "rules": [
+            "lexicon:DU_BO(违禁行为)",
+            "shape:fold:！->!",
+            "strip:!"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "多个命中",
+      "text": "一边堵搏一边卖drug5@qq",
+      "normalized": "一边赌博一边卖drugsaq",
+      "ok": true,
+      "expect_ids": [
+        "DU_BO",
+        "DRUGS"
+      ],
+      "got_ids": [
+        "DU_BO",
+        "DRUGS"
+      ],
+      "matches": [
+        {
+          "entry_id": "DU_BO",
+          "category": "违禁行为",
+          "word": "赌博",
+          "start": 2,
+          "end": 4,
+          "matched_text": "堵搏",
+          "normalized_text": "赌博",
+          "confidence": "medium",
+          "rules": [
+            "lexicon:DU_BO(违禁行为)",
+            "char:map:堵->赌",
+            "char:map:搏->博"
+          ]
+        },
+        {
+          "entry_id": "DRUGS",
+          "category": "违禁品",
+          "word": "drugs",
+          "start": 7,
+          "end": 12,
+          "matched_text": "drug5",
+          "normalized_text": "drugs",
+          "confidence": "medium",
+          "rules": [
+            "lexicon:DRUGS(违禁品)",
+            "char:map:5->s"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "leet无符号",
+      "text": "drug5交易",
+      "normalized": "drugs交易",
+      "ok": true,
+      "expect_ids": [
+        "DRUGS"
+      ],
+      "got_ids": [
+        "DRUGS"
+      ],
+      "matches": [
+        {
+          "entry_id": "DRUGS",
+          "category": "违禁品",
+          "word": "drugs",
+          "start": 0,
+          "end": 5,
+          "matched_text": "drug5",
+          "normalized_text": "drugs",
+          "confidence": "medium",
+          "rules": [
+            "lexicon:DRUGS(违禁品)",
+            "char:map:5->s"
+          ]
+        }
+      ]
+    }
+  ],
+  "false_positive_sentence_hits": [],
+  "false_positive_joined_hits": [],
+  "edge_cases": [
+    {
+      "name": "空字符串",
+      "length": 0,
+      "ok": true,
+      "expect_ids": [],
+      "got_ids": []
+    },
+    {
+      "name": "纯空白",
+      "length": 7,
+      "ok": true,
+      "expect_ids": [],
+      "got_ids": []
+    },
+    {
+      "name": "纯符号",
+      "length": 14,
+      "ok": true,
+      "expect_ids": [],
+      "got_ids": []
+    },
+    {
+      "name": "只有半个词-赌",
+      "length": 9,
+      "ok": true,
+      "expect_ids": [],
+      "got_ids": []
+    },
+    {
+      "name": "只有半个词-博",
+      "length": 6,
+      "ok": true,
+      "expect_ids": [],
+      "got_ids": []
+    },
+    {
+      "name": "拆字不成词",
+      "length": 9,
+      "ok": true,
+      "expect_ids": [],
+      "got_ids": []
+    },
+    {
+      "name": "英文单词粘连误触",
+      "length": 25,
+      "ok": true,
+      "expect_ids": [],
+      "got_ids": []
+    },
+    {
+      "name": "英文数字正常文本",
+      "length": 21,
+      "ok": true,
+      "expect_ids": [],
+      "got_ids": []
+    },
+    {
+      "name": "拉丁字母间空格保留",
+      "length": 33,
+      "ok": true,
+      "expect_ids": [],
+      "got_ids": []
+    },
+    {
+      "name": "白名单-产品名",
+      "length": 12,
+      "ok": true,
+      "expect_ids": [],
+      "got_ids": []
+    },
+    {
+      "name": "白名单不掩盖真实违规",
+      "length": 13,
+      "ok": true,
+      "expect_ids": [
+        "DU_BO"
+      ],
+      "got_ids": [
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "表情与零宽混合无违规",
+      "length": 14,
+      "ok": true,
+      "expect_ids": [],
+      "got_ids": []
+    },
+    {
+      "name": "标点全角正常句",
+      "length": 12,
+      "ok": true,
+      "expect_ids": [],
+      "got_ids": []
+    },
+    {
+      "name": "重叠正常词",
+      "length": 8,
+      "ok": true,
+      "expect_ids": [],
+      "got_ids": []
+    },
+    {
+      "name": "超长正常文本无命中",
+      "length": 260000,
+      "ok": true,
+      "expect_ids": [],
+      "got_ids": []
+    },
+    {
+      "name": "超长文本末尾藏违规",
+      "length": 100009,
+      "ok": true,
+      "expect_ids": [
+        "DU_BO"
+      ],
+      "got_ids": [
+        "DU_BO"
+      ]
+    },
+    {
+      "name": "超长文本多处违规",
+      "length": 130017,
+      "ok": true,
+      "expect_ids": [
+        "DU_BO",
+        "DRUGS"
+      ],
+      "got_ids": [
+        "DU_BO",
+        "DRUGS"
+      ]
+    }
+  ],
+  "long_text": [
+    {
+      "name": "超长正常文本无命中",
+      "length": 260000,
+      "ok": true,
+      "expect_ids": [],
+      "got_ids": [],
+      "elapsed_ms": 522.63,
+      "throughput_kchars_per_s": 497.0
+    },
+    {
+      "name": "超长文本末尾藏违规",
+      "length": 100009,
+      "ok": true,
+      "expect_ids": [
+        "DU_BO"
+      ],
+      "got_ids": [
+        "DU_BO"
+      ],
+      "elapsed_ms": 359.93,
+      "throughput_kchars_per_s": 278.0
+    },
+    {
+      "name": "超长文本多处违规",
+      "length": 130017,
+      "ok": true,
+      "expect_ids": [
+        "DU_BO",
+        "DRUGS"
+      ],
+      "got_ids": [
+        "DU_BO",
+        "DRUGS"
+      ],
+      "elapsed_ms": 315.91,
+      "throughput_kchars_per_s": 412.0
+    }
+  ],
+  "micro_benchmark_200k_plus": {
+    "chars": 200007,
+    "elapsed_ms": 628.4,
+    "kchars_per_s": 318.0,
+    "hits": [
+      {
+        "entry_id": "DU_BO",
+        "category": "违禁行为",
+        "word": "赌博",
+        "start": 200004,
+        "end": 200007,
+        "matched_text": "赌​博",
+        "normalized_text": "赌博",
+        "confidence": "high",
+        "rules": [
+          "lexicon:DU_BO(违禁行为)",
+          "strip:ZWSP"
+        ]
+      }
+    ]
+  }
+}

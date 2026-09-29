@@ -1,0 +1,45 @@
+{
+  "description": "误伤防护样例：文本经过激进还原（谐音/leet/去噪），但因不成词、单词边界、白名单等机制不产生命中。",
+  "cases": [
+    {
+      "text": "堵车的时候听听播客就不烦了",
+      "normalized": "赌车的时候听播客就不烦了",
+      "hits": []
+    },
+    {
+      "text": "炸薯片很好吃",
+      "normalized": "诈薯骗很好吃",
+      "hits": []
+    },
+    {
+      "text": "drugstore 是社区里的杂货店",
+      "normalized": "drugstore 是社区里的杂货店",
+      "hits": []
+    },
+    {
+      "text": "during the day",
+      "normalized": "during the day",
+      "hits": []
+    },
+    {
+      "text": "价格只要5元，会员还能再打八折",
+      "normalized": "价格只要s元会员还能再打八折",
+      "hits": []
+    },
+    {
+      "text": "一片树叶落在贝雕上",
+      "normalized": "一骗树叶落在贝雕上",
+      "hits": []
+    },
+    {
+      "text": "这个木仓库存放木材",
+      "normalized": "这个枪库存放木材",
+      "hits": []
+    },
+    {
+      "text": "d r u g s are letters with spaces",
+      "normalized": "d r u g s are leters with spaces",
+      "hits": []
+    }
+  ]
+}
