@@ -1,0 +1,6 @@
+scenario,trials,false_positive_rate,family_wise_false_positive_rate,false_negative_rate,family_no_positive_rate,target_rate,target_satisfied,wilson_95_ci_low,wilson_95_ci_high,average_stop_n,median_stop_n,p95_stop_n,max_stop_n,configured_max_n,alpha,family_alpha,per_test_alpha,beta,metrics,true_p,p0,p1
+null_single,20000,0.03935,,,,0.05,True,0.03674266077381506,0.04213426854560128,82.65975,66,207,292,292,0.05,,,0.2,,0.2,0.2,0.3
+null_multi_k5,20000,,0.0373,,,0.05,True,0.0347613279038841,0.0400163887922929,177.99525,159,365,373,373,,0.05,0.01,0.2,5,,,
+alt_single,20000,,,0.09875,,0.2,True,0.09469214801810133,0.10296196657956677,92.2577,74,223,292,292,0.05,,,0.2,,0.3,0.2,0.3
+alt_multi_k5,20000,,,,5e-05,0.2,True,8.82605523813606e-06,0.00028319785280960614,72.67155,68,130,373,373,,0.05,0.01,0.2,5,,,
+negative_effect_single,20000,0.0008,,,,0.05,True,0.0004925042635542211,0.0012992315798249828,44.9218,38,90,260,292,0.05,,,0.2,,0.15,0.2,0.3

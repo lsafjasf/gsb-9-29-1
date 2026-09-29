@@ -1,0 +1,124 @@
+{
+  "base_seed": 20260930,
+  "method": "Truncated one-sided Bernoulli SPRT/e-value test",
+  "random_source": "random.Random(base_seed + scenario_offset)",
+  "scenarios": [
+    {
+      "actual_no_positive_rate": 0.96065,
+      "actual_positive_rate": 0.03935,
+      "alpha": 0.05,
+      "average_stop_n": 82.65975,
+      "beta": 0.2,
+      "configured_max_n": 292,
+      "early_futility_rate": 0.9454,
+      "false_positive_rate": 0.03935,
+      "max_n_hit_rate": 0.01525,
+      "max_stop_n": 292,
+      "median_stop_n": 66,
+      "p0": 0.2,
+      "p1": 0.3,
+      "p95_stop_n": 207,
+      "scenario": "null_single",
+      "target_rate": 0.05,
+      "target_satisfied": true,
+      "trials": 20000,
+      "true_p": 0.2,
+      "wilson_95_ci": [
+        0.03674266077381506,
+        0.04213426854560128
+      ]
+    },
+    {
+      "average_stop_n": 177.99525,
+      "beta": 0.2,
+      "configured_max_n": 373,
+      "family_alpha": 0.05,
+      "family_wise_false_positive_rate": 0.0373,
+      "max_stop_n": 373,
+      "median_stop_n": 159,
+      "metrics": 5,
+      "p95_stop_n": 365,
+      "per_test_alpha": 0.01,
+      "scenario": "null_multi_k5",
+      "target_rate": 0.05,
+      "target_satisfied": true,
+      "trials": 20000,
+      "wilson_95_ci": [
+        0.0347613279038841,
+        0.0400163887922929
+      ]
+    },
+    {
+      "actual_no_positive_rate": 0.09875,
+      "actual_positive_rate": 0.90125,
+      "alpha": 0.05,
+      "average_stop_n": 92.2577,
+      "beta": 0.2,
+      "configured_max_n": 292,
+      "early_futility_rate": 0.08305,
+      "false_negative_rate": 0.09875,
+      "max_n_hit_rate": 0.0157,
+      "max_stop_n": 292,
+      "median_stop_n": 74,
+      "p0": 0.2,
+      "p1": 0.3,
+      "p95_stop_n": 223,
+      "scenario": "alt_single",
+      "target_rate": 0.2,
+      "target_satisfied": true,
+      "trials": 20000,
+      "true_p": 0.3,
+      "wilson_95_ci": [
+        0.09469214801810133,
+        0.10296196657956677
+      ]
+    },
+    {
+      "actual_family_positive_rate": 0.99995,
+      "average_stop_n": 72.67155,
+      "beta": 0.2,
+      "configured_max_n": 373,
+      "family_alpha": 0.05,
+      "family_no_positive_rate": 5e-05,
+      "max_stop_n": 373,
+      "median_stop_n": 68,
+      "metrics": 5,
+      "p95_stop_n": 130,
+      "per_test_alpha": 0.01,
+      "scenario": "alt_multi_k5",
+      "target_rate": 0.2,
+      "target_satisfied": true,
+      "trials": 20000,
+      "wilson_95_ci": [
+        8.82605523813606e-06,
+        0.00028319785280960614
+      ]
+    },
+    {
+      "actual_no_positive_rate": 0.9992,
+      "actual_positive_rate": 0.0008,
+      "alpha": 0.05,
+      "average_stop_n": 44.9218,
+      "beta": 0.2,
+      "configured_max_n": 292,
+      "early_futility_rate": 0.9992,
+      "false_positive_rate": 0.0008,
+      "max_n_hit_rate": 0.0,
+      "max_stop_n": 260,
+      "median_stop_n": 38,
+      "p0": 0.2,
+      "p1": 0.3,
+      "p95_stop_n": 90,
+      "scenario": "negative_effect_single",
+      "target_rate": 0.05,
+      "target_satisfied": true,
+      "trials": 20000,
+      "true_p": 0.15,
+      "wilson_95_ci": [
+        0.0004925042635542211,
+        0.0012992315798249828
+      ]
+    }
+  ],
+  "trials_per_scenario": 20000
+}
