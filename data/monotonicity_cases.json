@@ -1,0 +1,634 @@
+{
+  "clean_increasing": {
+    "binner": "optimal",
+    "bins": [
+      {
+        "bad": 10,
+        "bad_rate": 0.025252525252525252,
+        "count": 396,
+        "good": 386,
+        "index": 0,
+        "iv": 0.15996419960138059,
+        "kind": "normal",
+        "label": "bin_00",
+        "lower": 0.005563589369602733,
+        "upper": 0.05661965208597053,
+        "woe": -2.610011359446518
+      },
+      {
+        "bad": 100,
+        "bad_rate": 0.08417508417508418,
+        "count": 1188,
+        "good": 1088,
+        "index": 1,
+        "iv": 0.19378074988331,
+        "kind": "normal",
+        "label": "bin_01",
+        "lower": 0.05661965208597053,
+        "upper": 0.21285632306542746,
+        "woe": -1.386652901757991
+      },
+      {
+        "bad": 363,
+        "bad_rate": 0.18333333333333332,
+        "count": 1980,
+        "good": 1617,
+        "index": 2,
+        "iv": 0.053910197324416445,
+        "kind": "normal",
+        "label": "bin_02",
+        "lower": 0.21285632306542746,
+        "upper": 0.4566072254352399,
+        "woe": -0.4971124779840007
+      },
+      {
+        "bad": 349,
+        "bad_rate": 0.2937710437710438,
+        "count": 1188,
+        "good": 839,
+        "index": 3,
+        "iv": 0.0021773751607405915,
+        "kind": "normal",
+        "label": "bin_03",
+        "lower": 0.4566072254352399,
+        "upper": 0.6002344045798279,
+        "woe": 0.11944233657375027
+      },
+      {
+        "bad": 760,
+        "bad_rate": 0.3838383838383838,
+        "count": 1980,
+        "good": 1220,
+        "index": 4,
+        "iv": 0.0749704469624778,
+        "kind": "normal",
+        "label": "bin_04",
+        "lower": 0.6002344045798279,
+        "upper": 0.8515200913037122,
+        "woe": 0.5227054732838136
+      },
+      {
+        "bad": 558,
+        "bad_rate": 0.4696969696969697,
+        "count": 1188,
+        "good": 630,
+        "index": 5,
+        "iv": 0.13189740285341514,
+        "kind": "normal",
+        "label": "bin_05",
+        "lower": 0.8515200913037122,
+        "upper": 0.9951040015938895,
+        "woe": 0.8744867145217619
+      },
+      {
+        "bad": 0,
+        "bad_rate": null,
+        "count": 0,
+        "good": 0,
+        "index": 6,
+        "iv": 0.00014544108166456186,
+        "kind": "missing",
+        "label": "missing",
+        "lower": null,
+        "upper": null,
+        "woe": 0.9957452514174809
+      },
+      {
+        "bad": 1,
+        "bad_rate": 0.025,
+        "count": 40,
+        "good": 39,
+        "index": 7,
+        "iv": 0.013800418948620684,
+        "kind": "outlier_low",
+        "label": "outlier_low",
+        "lower": null,
+        "upper": null,
+        "woe": -2.275090312381431
+      },
+      {
+        "bad": 17,
+        "bad_rate": 0.425,
+        "count": 40,
+        "good": 23,
+        "index": 8,
+        "iv": 0.002863525358207562,
+        "kind": "outlier_high",
+        "label": "outlier_high",
+        "lower": null,
+        "upper": null,
+        "woe": 0.700945711196836
+      }
+    ],
+    "edges": [
+      0.05661965208597053,
+      0.21285632306542746,
+      0.4566072254352399,
+      0.6002344045798279,
+      0.8515200913037122
+    ],
+    "fences": [
+      0.005563589369602733,
+      0.9951040015938895
+    ],
+    "monotonicity": {
+      "direction": "increasing",
+      "is_monotone": true,
+      "merge_suggestions": [],
+      "rates_after_suggested_merges": [
+        0.025252525252525252,
+        0.08417508417508418,
+        0.18333333333333332,
+        0.2937710437710438,
+        0.3838383838383838,
+        0.4696969696969697
+      ],
+      "violations": []
+    },
+    "n_missing": 0,
+    "n_outlier_high": 40,
+    "n_outlier_low": 40,
+    "n_samples": 8000,
+    "scenario": "bad rate truly increases with x; auto direction",
+    "total_iv": 0.6335097571742334,
+    "warnings": []
+  },
+  "forced_monotone_repair": {
+    "binner": "optimal",
+    "bins": [
+      {
+        "bad": 1316,
+        "bad_rate": 0.23737373737373738,
+        "count": 5544,
+        "good": 4228,
+        "index": 0,
+        "iv": 0.08443504404470863,
+        "kind": "normal",
+        "label": "bin_00",
+        "lower": 0.005563589369602733,
+        "upper": 0.7038799094582429,
+        "woe": -0.36276913822207474
+      },
+      {
+        "bad": 356,
+        "bad_rate": 0.2996632996632997,
+        "count": 1188,
+        "good": 832,
+        "index": 1,
+        "iv": 0.0002852282796001246,
+        "kind": "normal",
+        "label": "bin_01",
+        "lower": 0.7038799094582429,
+        "upper": 0.8515200913037122,
+        "woe": -0.04399749993641036
+      },
+      {
+        "bad": 734,
+        "bad_rate": 0.6178451178451179,
+        "count": 1188,
+        "good": 454,
+        "index": 2,
+        "iv": 0.27572366164362716,
+        "kind": "normal",
+        "label": "bin_02",
+        "lower": 0.8515200913037122,
+        "upper": 0.9951040015938895,
+        "woe": 1.2840935640602367
+      },
+      {
+        "bad": 0,
+        "bad_rate": null,
+        "count": 0,
+        "good": 0,
+        "index": 3,
+        "iv": 8.980680244414257e-05,
+        "kind": "missing",
+        "label": "missing",
+        "lower": null,
+        "upper": null,
+        "woe": 0.8041014820638379
+      },
+      {
+        "bad": 32,
+        "bad_rate": 0.8,
+        "count": 40,
+        "good": 8,
+        "index": 4,
+        "iv": 0.02488843541092026,
+        "kind": "outlier_low",
+        "label": "outlier_low",
+        "lower": null,
+        "upper": null,
+        "woe": 2.145275407903259
+      },
+      {
+        "bad": 35,
+        "bad_rate": 0.875,
+        "count": 40,
+        "good": 5,
+        "index": 5,
+        "iv": 0.03564859897389158,
+        "kind": "outlier_high",
+        "label": "outlier_high",
+        "lower": null,
+        "upper": null,
+        "woe": 2.668886086306783
+      }
+    ],
+    "edges": [
+      0.7038799094582429,
+      0.8515200913037122
+    ],
+    "fences": [
+      0.005563589369602733,
+      0.9951040015938895
+    ],
+    "monotonicity": {
+      "direction": "increasing",
+      "is_monotone": true,
+      "merge_suggestions": [],
+      "rates_after_suggested_merges": [
+        0.23737373737373738,
+        0.2996632996632997,
+        0.6178451178451179
+      ],
+      "violations": []
+    },
+    "n_missing": 0,
+    "n_outlier_high": 40,
+    "n_outlier_low": 40,
+    "n_samples": 8000,
+    "scenario": "same U-shape but monotone='increasing' forces repair merges",
+    "total_iv": 0.4210707751551919,
+    "warnings": [
+      "monotone constraint 'increasing' enforced via 3 merge(s)"
+    ]
+  },
+  "long_tail_quantile": {
+    "binner": "quantile",
+    "bins": [
+      {
+        "bad": 12,
+        "bad_rate": 0.012108980827447022,
+        "count": 991,
+        "good": 979,
+        "index": 0,
+        "iv": 0.4210485012758743,
+        "kind": "normal",
+        "label": "bin_00",
+        "lower": 0.0050438457876325485,
+        "upper": 0.13631719798399217,
+        "woe": -2.9320656602314688
+      },
+      {
+        "bad": 45,
+        "bad_rate": 0.045454545454545456,
+        "count": 990,
+        "good": 945,
+        "index": 1,
+        "iv": 0.18775235357483547,
+        "kind": "normal",
+        "label": "bin_01",
+        "lower": 0.13631719798399217,
+        "upper": 0.29796379616326496,
+        "woe": -1.6047536292967362
+      },
+      {
+        "bad": 65,
+        "bad_rate": 0.06565656565656566,
+        "count": 990,
+        "good": 925,
+        "index": 2,
+        "iv": 0.12308365330826504,
+        "kind": "normal",
+        "label": "bin_02",
+        "lower": 0.29796379616326496,
+        "upper": 0.4789025037748565,
+        "woe": -1.2190360565274747
+      },
+      {
+        "bad": 106,
+        "bad_rate": 0.10707070707070707,
+        "count": 990,
+        "good": 884,
+        "index": 3,
+        "iv": 0.04683261794814728,
+        "kind": "normal",
+        "label": "bin_03",
+        "lower": 0.4789025037748565,
+        "upper": 0.695419832412494,
+        "woe": -0.687629595605489
+      },
+      {
+        "bad": 155,
+        "bad_rate": 0.15656565656565657,
+        "count": 990,
+        "good": 835,
+        "index": 4,
+        "iv": 0.007270312988826202,
+        "kind": "normal",
+        "label": "bin_04",
+        "lower": 0.695419832412494,
+        "upper": 0.9793398084129399,
+        "woe": -0.2521366835712882
+      },
+      {
+        "bad": 238,
+        "bad_rate": 0.2404040404040404,
+        "count": 990,
+        "good": 752,
+        "index": 5,
+        "iv": 0.010560800924819197,
+        "kind": "normal",
+        "label": "bin_05",
+        "lower": 0.9793398084129399,
+        "upper": 1.3789984103155881,
+        "woe": 0.28021624655023647
+      },
+      {
+        "bad": 334,
+        "bad_rate": 0.3373737373737374,
+        "count": 990,
+        "good": 656,
+        "index": 6,
+        "iv": 0.08654140462056191,
+        "kind": "normal",
+        "label": "bin_06",
+        "lower": 1.3789984103155881,
+        "upper": 2.05232572258821,
+        "woe": 0.7549621186703035
+      },
+      {
+        "bad": 553,
+        "bad_rate": 0.5585858585858586,
+        "count": 990,
+        "good": 437,
+        "index": 7,
+        "iv": 0.4829423346226805,
+        "kind": "normal",
+        "label": "bin_07",
+        "lower": 2.05232572258821,
+        "upper": 5.446723651294107,
+        "woe": 1.6644329791958938
+      },
+      {
+        "bad": 0,
+        "bad_rate": null,
+        "count": 0,
+        "good": 0,
+        "index": 8,
+        "iv": 0.00035142541959113467,
+        "kind": "missing",
+        "label": "missing",
+        "lower": null,
+        "upper": null,
+        "woe": 1.4292479328448713
+      },
+      {
+        "bad": 0,
+        "bad_rate": 0.0,
+        "count": 41,
+        "good": 41,
+        "index": 9,
+        "iv": 0.018246455692951483,
+        "kind": "outlier_low",
+        "label": "outlier_low",
+        "lower": null,
+        "upper": null,
+        "woe": -2.9895926749517265
+      },
+      {
+        "bad": 38,
+        "bad_rate": 0.926829268292683,
+        "count": 41,
+        "good": 3,
+        "index": 10,
+        "iv": 0.09320210696496287,
+        "kind": "outlier_high",
+        "label": "outlier_high",
+        "lower": null,
+        "upper": null,
+        "woe": 3.827143205643242
+      }
+    ],
+    "edges": [
+      0.13631719798399217,
+      0.29796379616326496,
+      0.4789025037748565,
+      0.695419832412494,
+      0.9793398084129399,
+      1.3789984103155881,
+      2.05232572258821
+    ],
+    "fences": [
+      0.0050438457876325485,
+      5.446723651294107
+    ],
+    "monotonicity": {
+      "direction": "increasing",
+      "is_monotone": true,
+      "merge_suggestions": [],
+      "rates_after_suggested_merges": [
+        0.012108980827447022,
+        0.045454545454545456,
+        0.06565656565656566,
+        0.10707070707070707,
+        0.15656565656565657,
+        0.2404040404040404,
+        0.3373737373737374,
+        0.5585858585858586
+      ],
+      "violations": []
+    },
+    "n_missing": 0,
+    "n_outlier_high": 41,
+    "n_outlier_low": 41,
+    "n_samples": 8003,
+    "scenario": "extreme long tail: outliers isolated, inlier bins stay spread",
+    "total_iv": 1.4778319673415155,
+    "warnings": []
+  },
+  "u_shaped_violation": {
+    "binner": "optimal",
+    "bins": [
+      {
+        "bad": 314,
+        "bad_rate": 0.7929292929292929,
+        "count": 396,
+        "good": 82,
+        "index": 0,
+        "iv": 0.2404126037606694,
+        "kind": "normal",
+        "label": "bin_00",
+        "lower": 0.005563589369602733,
+        "upper": 0.05661965208597053,
+        "woe": 2.142287264863698
+      },
+      {
+        "bad": 412,
+        "bad_rate": 0.5202020202020202,
+        "count": 792,
+        "good": 380,
+        "index": 1,
+        "iv": 0.08665360398321166,
+        "kind": "normal",
+        "label": "bin_01",
+        "lower": 0.05661965208597053,
+        "upper": 0.16144716366048573,
+        "woe": 0.8848515105368331
+      },
+      {
+        "bad": 317,
+        "bad_rate": 0.2668350168350168,
+        "count": 1188,
+        "good": 871,
+        "index": 2,
+        "iv": 0.006026301216772035,
+        "kind": "normal",
+        "label": "bin_02",
+        "lower": 0.16144716366048573,
+        "upper": 0.3123580466713378,
+        "woe": -0.20563656456349125
+      },
+      {
+        "bad": 273,
+        "bad_rate": 0.08617424242424243,
+        "count": 3168,
+        "good": 2895,
+        "index": 3,
+        "iv": 0.6428351960144556,
+        "kind": "normal",
+        "label": "bin_03",
+        "lower": 0.3123580466713378,
+        "upper": 0.7038799094582429,
+        "woe": -1.5555099827399708
+      },
+      {
+        "bad": 356,
+        "bad_rate": 0.2996632996632997,
+        "count": 1188,
+        "good": 832,
+        "index": 4,
+        "iv": 0.0002852282796001246,
+        "kind": "normal",
+        "label": "bin_04",
+        "lower": 0.7038799094582429,
+        "upper": 0.8515200913037122,
+        "woe": -0.04399749993641036
+      },
+      {
+        "bad": 734,
+        "bad_rate": 0.6178451178451179,
+        "count": 1188,
+        "good": 454,
+        "index": 5,
+        "iv": 0.27572366164362716,
+        "kind": "normal",
+        "label": "bin_05",
+        "lower": 0.8515200913037122,
+        "upper": 0.9951040015938895,
+        "woe": 1.2840935640602367
+      },
+      {
+        "bad": 0,
+        "bad_rate": null,
+        "count": 0,
+        "good": 0,
+        "index": 6,
+        "iv": 8.980680244414257e-05,
+        "kind": "missing",
+        "label": "missing",
+        "lower": null,
+        "upper": null,
+        "woe": 0.8041014820638379
+      },
+      {
+        "bad": 32,
+        "bad_rate": 0.8,
+        "count": 40,
+        "good": 8,
+        "index": 7,
+        "iv": 0.02488843541092026,
+        "kind": "outlier_low",
+        "label": "outlier_low",
+        "lower": null,
+        "upper": null,
+        "woe": 2.145275407903259
+      },
+      {
+        "bad": 35,
+        "bad_rate": 0.875,
+        "count": 40,
+        "good": 5,
+        "index": 8,
+        "iv": 0.03564859897389158,
+        "kind": "outlier_high",
+        "label": "outlier_high",
+        "lower": null,
+        "upper": null,
+        "woe": 2.668886086306783
+      }
+    ],
+    "edges": [
+      0.05661965208597053,
+      0.16144716366048573,
+      0.3123580466713378,
+      0.7038799094582429,
+      0.8515200913037122
+    ],
+    "fences": [
+      0.005563589369602733,
+      0.9951040015938895
+    ],
+    "monotonicity": {
+      "direction": "decreasing",
+      "is_monotone": false,
+      "merge_suggestions": [
+        {
+          "iv_loss": 0.1457728404,
+          "merge_bins": [
+            4,
+            5
+          ],
+          "reason": "bad-rate violates decreasing order between positions 4 and 5"
+        },
+        {
+          "iv_loss": 0.719745386,
+          "merge_bins": [
+            3,
+            4,
+            5
+          ],
+          "reason": "bad-rate violates decreasing order between positions 3 and 4"
+        }
+      ],
+      "rates_after_suggested_merges": [
+        0.7929292929292929,
+        0.5202020202020202,
+        0.2668350168350168,
+        0.24585137085137085
+      ],
+      "violations": [
+        {
+          "left": 3,
+          "left_rate": 0.08617424242424243,
+          "right": 4,
+          "right_rate": 0.2996632996632997
+        },
+        {
+          "left": 4,
+          "left_rate": 0.2996632996632997,
+          "right": 5,
+          "right_rate": 0.6178451178451179
+        }
+      ]
+    },
+    "n_missing": 0,
+    "n_outlier_high": 40,
+    "n_outlier_low": 40,
+    "n_samples": 8000,
+    "scenario": "U-shaped risk: violations must be reported with merge suggestions",
+    "total_iv": 1.312563436085592,
+    "warnings": []
+  }
+}
