@@ -1,0 +1,29 @@
+{"id": "s2t-001", "direction": "s2t", "category": "pure_simplified", "source": "他站在门的后面。", "target": "他站在門的後面。", "note": "后面->後面"}
+{"id": "s2t-002", "direction": "s2t", "category": "pure_simplified", "source": "皇后住在皇宫里。", "target": "皇后住在皇宮裡。", "note": "皇后 不转"}
+{"id": "s2t-003", "direction": "s2t", "category": "pure_simplified", "source": "她的头发很长。", "target": "她的頭髮很長。", "note": "头发->頭髮"}
+{"id": "s2t-004", "direction": "s2t", "category": "pure_simplified", "source": "我去理发店剪头发。", "target": "我去理髮店剪頭髮。"}
+{"id": "s2t-005", "direction": "s2t", "category": "pure_simplified", "source": "这条面条很好吃。", "target": "這條麵條很好吃。", "note": "面条->麵條"}
+{"id": "s2t-006", "direction": "s2t", "category": "pure_simplified", "source": "这里离学校三公里。", "target": "這裡離學校三公里。", "note": "这里->這裡, 公里 不转"}
+{"id": "s2t-007", "direction": "s2t", "category": "pure_simplified", "source": "天上的云很白。", "target": "天上的雲很白。"}
+{"id": "s2t-008", "direction": "s2t", "category": "pure_simplified", "source": "请放松一点。", "target": "請放鬆一點。"}
+{"id": "s2t-009", "direction": "s2t", "category": "pure_simplified", "source": "桌子上有一块手表。", "target": "桌子上有一塊手錶。", "note": "手表->手錶"}
+{"id": "s2t-010", "direction": "s2t", "category": "pure_simplified", "source": "太后和皇后都住在后宫。", "target": "太后和皇后都住在後宮。", "note": "太后/皇后 不转, 后宫->後宮(默认)"}
+{"id": "s2t-011", "direction": "s2t", "category": "pure_simplified", "source": "天气干燥, 记得多喝水。", "target": "天氣乾燥, 記得多喝水。", "note": "干燥->乾燥"}
+{"id": "s2t-012", "direction": "s2t", "category": "pure_simplified", "source": "他什么都会干。", "target": "他什麼都會幹。", "note": "孤立的 干 无词规则无默认, 应标记待确认"}
+{"id": "t2s-001", "direction": "t2s", "category": "pure_traditional", "source": "他站在門的後面。", "target": "他站在门的后面。"}
+{"id": "t2s-002", "direction": "t2s", "category": "pure_traditional", "source": "皇后住在皇宮裡。", "target": "皇后住在皇宫里。"}
+{"id": "t2s-003", "direction": "t2s", "category": "pure_traditional", "source": "她的頭髮很長。", "target": "她的头发很长。"}
+{"id": "t2s-004", "direction": "t2s", "category": "pure_traditional", "source": "天氣很乾燥。", "target": "天气很干燥。", "note": "乾燥->干燥"}
+{"id": "t2s-005", "direction": "t2s", "category": "pure_traditional", "source": "乾隆皇帝很有名。", "target": "乾隆皇帝很有名。", "note": "乾隆 不转"}
+{"id": "t2s-006", "direction": "t2s", "category": "pure_traditional", "source": "這碗麵條很好吃。", "target": "这碗面条很好吃。"}
+{"id": "t2s-007", "direction": "t2s", "category": "pure_traditional", "source": "他藉口身體不舒服。", "target": "他借口身体不舒服。", "note": "藉口->借口, 身体->身体"}
+{"id": "mix-001", "direction": "s2t", "category": "mixed", "source": "他說后面有猫。", "target": "他說後面有貓。", "note": "繁简混排: 說 已是繁体, 原样保留"}
+{"id": "mix-002", "direction": "s2t", "category": "mixed", "source": "這個头发很乱。", "target": "這個頭髮很亂。", "note": "這 已是繁体"}
+{"id": "mix-003", "direction": "t2s", "category": "mixed", "source": "这个頭髮很長。", "target": "这个头发很长。", "note": "这个 已是简体"}
+{"id": "mix-004", "direction": "t2s", "category": "mixed", "source": "乾燥的天气。", "target": "干燥的天气。", "note": "混排 + 乾 消解"}
+{"id": "name-001", "direction": "s2t", "category": "proper_noun", "source": "姜子牙是周朝的功臣。", "target": "姜子牙是周朝的功臣。", "note": "姜 姓不转"}
+{"id": "name-002", "direction": "s2t", "category": "proper_noun", "source": "范冰冰是演员。", "target": "范冰冰是演員。", "note": "范 姓不转"}
+{"id": "name-003", "direction": "s2t", "category": "proper_noun", "source": "乾隆皇帝下江南。", "target": "乾隆皇帝下江南。", "note": "乾隆 不转"}
+{"id": "name-004", "direction": "s2t", "category": "proper_noun", "source": "沈阳是辽宁的省会。", "target": "瀋陽是遼寧的省會。", "note": "沈阳->瀋陽"}
+{"id": "name-005", "direction": "t2s", "category": "proper_noun", "source": "瀋陽是遼寧的省會。", "target": "沈阳是辽宁的省会。"}
+{"id": "name-006", "direction": "s2t", "category": "proper_noun", "source": "他姓余, 业余喜欢画画。", "target": "他姓余, 業餘喜歡畫畫。", "note": "姓余 不转(词规则), 业余->業餘"}

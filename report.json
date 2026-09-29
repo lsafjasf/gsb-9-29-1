@@ -1,0 +1,396 @@
+{
+  "summary": {
+    "total_sentences": 29,
+    "exact_match": 28,
+    "sentence_accuracy": 0.9655,
+    "mean_char_accuracy": 0.9951,
+    "total_char_errors": 1,
+    "error_classes": {
+      "unresolved": 1,
+      "under_conversion": 0,
+      "over_conversion": 0,
+      "wrong_target": 0
+    },
+    "per_category": {
+      "mixed": {
+        "exact": 4,
+        "total": 4,
+        "accuracy": 1.0
+      },
+      "proper_noun": {
+        "exact": 6,
+        "total": 6,
+        "accuracy": 1.0
+      },
+      "pure_simplified": {
+        "exact": 11,
+        "total": 12,
+        "accuracy": 0.9167
+      },
+      "pure_traditional": {
+        "exact": 7,
+        "total": 7,
+        "accuracy": 1.0
+      }
+    }
+  },
+  "sentences": [
+    {
+      "id": "s2t-001",
+      "direction": "s2t",
+      "category": "pure_simplified",
+      "source": "他站在门的后面。",
+      "expected": "他站在門的後面。",
+      "got": "他站在門的後面。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "s2t-002",
+      "direction": "s2t",
+      "category": "pure_simplified",
+      "source": "皇后住在皇宫里。",
+      "expected": "皇后住在皇宮裡。",
+      "got": "皇后住在皇宮裡。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "s2t-003",
+      "direction": "s2t",
+      "category": "pure_simplified",
+      "source": "她的头发很长。",
+      "expected": "她的頭髮很長。",
+      "got": "她的頭髮很長。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "s2t-004",
+      "direction": "s2t",
+      "category": "pure_simplified",
+      "source": "我去理发店剪头发。",
+      "expected": "我去理髮店剪頭髮。",
+      "got": "我去理髮店剪頭髮。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "s2t-005",
+      "direction": "s2t",
+      "category": "pure_simplified",
+      "source": "这条面条很好吃。",
+      "expected": "這條麵條很好吃。",
+      "got": "這條麵條很好吃。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "s2t-006",
+      "direction": "s2t",
+      "category": "pure_simplified",
+      "source": "这里离学校三公里。",
+      "expected": "這裡離學校三公里。",
+      "got": "這裡離學校三公里。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "s2t-007",
+      "direction": "s2t",
+      "category": "pure_simplified",
+      "source": "天上的云很白。",
+      "expected": "天上的雲很白。",
+      "got": "天上的雲很白。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "s2t-008",
+      "direction": "s2t",
+      "category": "pure_simplified",
+      "source": "请放松一点。",
+      "expected": "請放鬆一點。",
+      "got": "請放鬆一點。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "s2t-009",
+      "direction": "s2t",
+      "category": "pure_simplified",
+      "source": "桌子上有一块手表。",
+      "expected": "桌子上有一塊手錶。",
+      "got": "桌子上有一塊手錶。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "s2t-010",
+      "direction": "s2t",
+      "category": "pure_simplified",
+      "source": "太后和皇后都住在后宫。",
+      "expected": "太后和皇后都住在後宮。",
+      "got": "太后和皇后都住在後宮。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "s2t-011",
+      "direction": "s2t",
+      "category": "pure_simplified",
+      "source": "天气干燥, 记得多喝水。",
+      "expected": "天氣乾燥, 記得多喝水。",
+      "got": "天氣乾燥, 記得多喝水。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "s2t-012",
+      "direction": "s2t",
+      "category": "pure_simplified",
+      "source": "他什么都会干。",
+      "expected": "他什麼都會幹。",
+      "got": "他什麼都會干。",
+      "exact": false,
+      "char_accuracy": 0.8571,
+      "pending": 1,
+      "errors": [
+        {
+          "position": 5,
+          "source": "干",
+          "expected": "幹",
+          "got": "干",
+          "class": "unresolved",
+          "class_name": "未消解(待确认)"
+        }
+      ]
+    },
+    {
+      "id": "t2s-001",
+      "direction": "t2s",
+      "category": "pure_traditional",
+      "source": "他站在門的後面。",
+      "expected": "他站在门的后面。",
+      "got": "他站在门的后面。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "t2s-002",
+      "direction": "t2s",
+      "category": "pure_traditional",
+      "source": "皇后住在皇宮裡。",
+      "expected": "皇后住在皇宫里。",
+      "got": "皇后住在皇宫里。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "t2s-003",
+      "direction": "t2s",
+      "category": "pure_traditional",
+      "source": "她的頭髮很長。",
+      "expected": "她的头发很长。",
+      "got": "她的头发很长。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "t2s-004",
+      "direction": "t2s",
+      "category": "pure_traditional",
+      "source": "天氣很乾燥。",
+      "expected": "天气很干燥。",
+      "got": "天气很干燥。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "t2s-005",
+      "direction": "t2s",
+      "category": "pure_traditional",
+      "source": "乾隆皇帝很有名。",
+      "expected": "乾隆皇帝很有名。",
+      "got": "乾隆皇帝很有名。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "t2s-006",
+      "direction": "t2s",
+      "category": "pure_traditional",
+      "source": "這碗麵條很好吃。",
+      "expected": "这碗面条很好吃。",
+      "got": "这碗面条很好吃。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "t2s-007",
+      "direction": "t2s",
+      "category": "pure_traditional",
+      "source": "他藉口身體不舒服。",
+      "expected": "他借口身体不舒服。",
+      "got": "他借口身体不舒服。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "mix-001",
+      "direction": "s2t",
+      "category": "mixed",
+      "source": "他說后面有猫。",
+      "expected": "他說後面有貓。",
+      "got": "他說後面有貓。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "mix-002",
+      "direction": "s2t",
+      "category": "mixed",
+      "source": "這個头发很乱。",
+      "expected": "這個頭髮很亂。",
+      "got": "這個頭髮很亂。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "mix-003",
+      "direction": "t2s",
+      "category": "mixed",
+      "source": "这个頭髮很長。",
+      "expected": "这个头发很长。",
+      "got": "这个头发很长。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "mix-004",
+      "direction": "t2s",
+      "category": "mixed",
+      "source": "乾燥的天气。",
+      "expected": "干燥的天气。",
+      "got": "干燥的天气。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "name-001",
+      "direction": "s2t",
+      "category": "proper_noun",
+      "source": "姜子牙是周朝的功臣。",
+      "expected": "姜子牙是周朝的功臣。",
+      "got": "姜子牙是周朝的功臣。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "name-002",
+      "direction": "s2t",
+      "category": "proper_noun",
+      "source": "范冰冰是演员。",
+      "expected": "范冰冰是演員。",
+      "got": "范冰冰是演員。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "name-003",
+      "direction": "s2t",
+      "category": "proper_noun",
+      "source": "乾隆皇帝下江南。",
+      "expected": "乾隆皇帝下江南。",
+      "got": "乾隆皇帝下江南。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "name-004",
+      "direction": "s2t",
+      "category": "proper_noun",
+      "source": "沈阳是辽宁的省会。",
+      "expected": "瀋陽是遼寧的省會。",
+      "got": "瀋陽是遼寧的省會。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "name-005",
+      "direction": "t2s",
+      "category": "proper_noun",
+      "source": "瀋陽是遼寧的省會。",
+      "expected": "沈阳是辽宁的省会。",
+      "got": "沈阳是辽宁的省会。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    },
+    {
+      "id": "name-006",
+      "direction": "s2t",
+      "category": "proper_noun",
+      "source": "他姓余, 业余喜欢画画。",
+      "expected": "他姓余, 業餘喜歡畫畫。",
+      "got": "他姓余, 業餘喜歡畫畫。",
+      "exact": true,
+      "char_accuracy": 1.0,
+      "pending": 0,
+      "errors": []
+    }
+  ]
+}
