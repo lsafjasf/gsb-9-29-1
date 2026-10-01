@@ -1,0 +1,32 @@
+RIF codec demo  (800x600x3, zlib level 9)
+
+== synthetic (gradient + flat rects) ==
+  image      : 800x600x3  raw=1440000 B  encoded=8877 B
+  ratio      : 0.0062  (encoded/raw, smaller is better; 99.38% saved)
+  filters    :
+    None    :     0 rows (  0.0%) 
+    Sub     :     1 rows (  0.2%) 
+    Up      :   342 rows ( 57.0%) ######################
+    Average :     0 rows (  0.0%) 
+    Paeth   :   257 rows ( 42.8%) #################
+
+== photo-like (smooth + mild noise) ==
+  image      : 800x600x3  raw=1440000 B  encoded=982314 B
+  ratio      : 0.6822  (encoded/raw, smaller is better; 31.78% saved)
+  filters    :
+    None    :     0 rows (  0.0%) 
+    Sub     :     1 rows (  0.2%) 
+    Up      :     0 rows (  0.0%) 
+    Average :   599 rows ( 99.8%) #######################################
+    Paeth   :     0 rows (  0.0%) 
+
+== random noise (os.urandom) ==
+  image      : 800x600x3  raw=1440000 B  encoded=1441060 B
+  ratio      : 1.0007  (encoded/raw, smaller is better; -0.07% saved)
+  filters    :
+    None    :   182 rows ( 30.3%) ############
+    Sub     :   123 rows ( 20.5%) ########
+    Up      :   125 rows ( 20.8%) ########
+    Average :    93 rows ( 15.5%) ######
+    Paeth   :    77 rows ( 12.8%) #####
+
