@@ -1,0 +1,26 @@
+WeightedOne k=1: frequency vs exact w_i/W (weights ['0.5', '2', '10', '0.001', '7', '3'])
+-----------------------------------------------------------------------------------------
+repetitions: 300000
+item                 observed     expected      obs-exp         z
+w=0.5                0.022130     0.022221    -0.000091     -0.34
+w=2                  0.088550     0.088885    -0.000335     -0.64
+w=10                 0.444430     0.444425    +0.000005      0.01
+w=0.001              0.000050     0.000044    +0.000006      0.46
+w=7                  0.312110     0.311097    +0.001013      1.20
+w=3                  0.132730     0.133327    -0.000597     -0.96
+max |z| = 1.20 (item w=7, limit 5.0) -> PASS
+
+WeightedOne k=1: weights [1000000, 1], R = 200000
+  exact pi_small = 1/1000001 = 0.00000100, expected count 0.2000, observed 0
+  rare-event sanity (observed <= 5): PASS
+
+WeightedOne: 100000 x weight '0.1'
+  exact Fraction total W = 10000 (== 10000: PASS)
+  float64 accumulation   = 10000.000000018848 (drift 1.88e-08)
+
+WeightedOne: weights 10**30 vs 10**30+1
+  exact pi_1 = 1000000000000000000000000000000/2000000000000000000000000000001 ~ 0.50000000000000000
+  float64 pi = 0.50000000000000000 (weights collapse to the same double)
+  library keeps them distinct: PASS
+
+OVERALL: PASS

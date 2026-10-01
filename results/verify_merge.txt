@@ -1,0 +1,56 @@
+Uniform merge: single-pass frequencies vs k/N (200 items, 4 shards)
+-------------------------------------------------------------------
+repetitions: 20000
+item                 observed     expected      obs-exp         z
+item 0               0.049400     0.050000    -0.000600     -0.39
+item 1               0.050000     0.050000    +0.000000      0.00
+item 2               0.050850     0.050000    +0.000850      0.55
+item 3               0.048800     0.050000    -0.001200     -0.78
+item 4               0.049500     0.050000    -0.000500     -0.32
+... (195 rows omitted)
+max |z| = 3.08 (item item 114, limit 5.5) -> PASS
+
+Uniform merge: shard-merged frequencies vs k/N
+----------------------------------------------
+repetitions: 20000
+item                 observed     expected      obs-exp         z
+item 0               0.048850     0.050000    -0.001150     -0.75
+item 1               0.050250     0.050000    +0.000250      0.16
+item 2               0.051650     0.050000    +0.001650      1.07
+item 3               0.049850     0.050000    -0.000150     -0.10
+item 4               0.047450     0.050000    -0.002550     -1.65
+... (195 rows omitted)
+max |z| = 2.40 (item item 30, limit 5.5) -> PASS
+
+Uniform merge: max two-sample |z| single vs merged = 2.59
+-> PASS
+
+A-Res merge identity: identical to single-pass in 3000/3000 repetitions -> PASS
+
+A-Res merge: 3 shards, weights 1..8, k=3, frequency vs exact integral pi
+------------------------------------------------------------------------
+repetitions: 100000
+item                 observed     expected      obs-exp         z
+w=1                  0.097860     0.098745    -0.000885     -0.94
+w=2                  0.190520     0.191471    -0.000951     -0.76
+w=3                  0.278990     0.277734    +0.001256      0.89
+w=4                  0.357330     0.357108    +0.000222      0.15
+w=5                  0.427390     0.429222    -0.001832     -1.17
+w=6                  0.494440     0.493828    +0.000612      0.39
+w=7                  0.550980     0.550924    +0.000056      0.04
+w=8                  0.602490     0.600967    +0.001523      0.98
+max |z| = 1.17 (item w=5, limit 5.0) -> PASS
+
+WeightedOne merge: 3 shards, weights ['0.5', '2', '10', '0.001', '7', '3'], frequency vs exact w_i/W
+----------------------------------------------------------------------------------------------------
+repetitions: 200000
+item                 observed     expected      obs-exp         z
+w=0.5                0.022895     0.022221    +0.000674      2.04
+w=2                  0.088255     0.088885    -0.000630     -0.99
+w=10                 0.445820     0.444425    +0.001395      1.26
+w=0.001              0.000025     0.000044    -0.000019     -1.30
+w=7                  0.310095     0.311097    -0.001002     -0.97
+w=3                  0.132910     0.133327    -0.000417     -0.55
+max |z| = 2.04 (item w=0.5, limit 5.0) -> PASS
+
+OVERALL: PASS

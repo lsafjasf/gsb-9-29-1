@@ -1,0 +1,31 @@
+PPS k=3: exact regime (equal first k, no certainty units), weights [12, 12, 12, 9, 10, 11, 9, 10, 11, 9]
+--------------------------------------------------------------------------------------------------------
+repetitions: 100000
+item                 observed     expected      obs-exp         z
+w=12                 0.340150     0.342857    -0.002707     -1.80
+w=12                 0.345480     0.342857    +0.002623      1.75
+w=12                 0.342320     0.342857    -0.000537     -0.36
+w=9                  0.258310     0.257143    +0.001167      0.84
+w=10                 0.283740     0.285714    -0.001974     -1.38
+w=11                 0.313700     0.314286    -0.000586     -0.40
+w=9                  0.256480     0.257143    -0.000663     -0.48
+w=10                 0.285650     0.285714    -0.000064     -0.04
+w=11                 0.316450     0.314286    +0.002164      1.47
+w=9                  0.257720     0.257143    +0.000577      0.42
+max |z| = 1.80 (item w=12, limit 5.0) -> PASS
+
+PPS k=3: extreme skew weights [1, 1, 1, 1, 1, 1, 1, 1000000] (reported, not asserted)
+repetitions: 100000
+item                 observed       target
+w=1                  0.283380     0.000003
+w=1                  0.285440     0.000003
+w=1                  0.286640     0.000003
+w=1                  0.286870     0.000003
+w=1                  0.285540     0.000003
+w=1                  0.284810     0.000003
+w=1                  0.287320     0.000003
+w=1000000            1.000000     1.000000
+note: with certainty units, min(1,k*w/W) is not exactly attainable single-pass;
+this is the documented approximate regime (exactness_holds=False).
+
+OVERALL: PASS

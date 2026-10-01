@@ -1,0 +1,30 @@
+all-zero weighted streams raise a clear error:
+  WeightedOne raises ValueError: PASS
+  ARes(k=3) raises ValueError: PASS
+  PPS(k=3) raises ValueError: PASS
+
+single-element streams:
+  Uniform(1) -> element: PASS
+  WeightedOne -> element: PASS
+  ARes(3) -> [element]: PASS
+  PPS(1) -> element: PASS
+
+k = 0 / k > N:
+  Uniform(0) -> []: PASS
+  Uniform(10) over 3 items -> all 3: PASS
+  ARes(0) -> []: PASS
+
+zero-weight items are never selected:
+  ARes reservoir contains only positive-weight items: PASS
+  WeightedOne with 1000 zeros then a tiny weight -> that item: PASS
+
+1e6 skew at k=1, R = 1,000,000 (expected small-item count ~ 0.999999):
+  small selected 1 times (exact expectation 0.999999)
+  rare count within [0, 10]: PASS
+
+decimal-string weights stay exact:
+  parse_weight('0.0000000001') == 1e-10 as Fraction: PASS
+  parse_weight huge integer string exact: PASS
+  '1.5e-3' == 3/2000: PASS
+
+OVERALL: PASS
