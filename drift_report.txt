@@ -1,0 +1,28 @@
+====================================================================
+tsalign drift experiment: 3600 s, video 25 fps @1/90000, audio 1024/48000 Hz
+injected: 1 rollback/stream @40%, +2 s jump @70%, jitter 300/150 us
+====================================================================
+
+[clock skew estimation]   true        estimated
+  video                   +50 ppm     +50.00 ppm
+  audio                   -30 ppm     -30.00 ppm
+  fit outliers rejected:  video=27002 audio=50627 (rollback+jump segment)
+
+[alignment error vs ground truth]   rms          p95          max
+  video BEFORE correction      103.962 ms   171.067 ms   180.344 ms
+  video AFTER  correction        0.274 ms     0.482 ms     0.519 ms
+  audio BEFORE correction       62.389 ms   102.667 ms   108.208 ms
+  audio AFTER  correction        0.151 ms     0.259 ms     0.284 ms
+
+[A/V desync at end of 3600 s]
+  BEFORE correction: 288.268 ms
+  AFTER  correction: 0.234 ms
+
+[cross-stream frame pairing after correction]
+  rms=6.193 ms  p95=10.390 ms  max=19.027 ms  (audio frame = 21.333 ms)
+
+[event handling]
+  rollbacks clamped: video=1 audio=1 (policy=CLAMP, min_step=1 tick)
+  forward jumps passed through: video=1 audio=1
+
+[monotonicity] ASSERTION PASSED: 90000 video + 168750 audio output ticks strictly increasing
