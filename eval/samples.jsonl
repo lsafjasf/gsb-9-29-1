@@ -1,0 +1,37 @@
+{"id": "empty", "category": "边界", "text": "", "errors": [], "protected": []}
+{"id": "clean-cjk", "category": "无命中", "text": "今天天气很好，我们一起去公园散步。", "errors": [], "protected": []}
+{"id": "clean-en", "category": "无命中", "text": "This is a clean sentence with no issues at all.", "errors": [], "protected": []}
+{"id": "idiom-qianfang", "category": "用词", "text": "我们要千方白计完成任务。", "errors": [{"original": "千方白计", "suggestion": "千方百计"}], "protected": []}
+{"id": "idiom-yiru", "category": "用词", "text": "他一如继往地努力工作。", "errors": [{"original": "一如继往", "suggestion": "一如既往"}], "protected": []}
+{"id": "idiom-anbu", "category": "用词", "text": "工作要按步就班推进。", "errors": [{"original": "按步就班", "suggestion": "按部就班"}], "protected": []}
+{"id": "idiom-jiusi", "category": "用词", "text": "这种九是十非的风险很大。", "errors": [{"original": "九是十非", "suggestion": "九死一生"}], "protected": []}
+{"id": "word-mingji", "category": "用词", "text": "这句话值得名记在心。", "errors": [{"original": "名记", "suggestion": "铭记"}], "protected": []}
+{"id": "collab-zhiding", "category": "搭配", "text": "制定计划很重要。", "errors": [{"original": "制定计划", "suggestion": "制订计划"}], "protected": []}
+{"id": "collab-fanying", "category": "搭配", "text": "他向上级反应意见。", "errors": [{"original": "反应意见", "suggestion": "反映意见"}], "protected": []}
+{"id": "collab-huanying", "category": "搭配", "text": "大家强烈欢迎新同学。", "errors": [{"original": "强烈欢迎", "suggestion": "热烈欢迎"}], "protected": []}
+{"id": "collab-shuiping", "category": "搭配", "text": "这能增加水平。", "errors": [{"original": "增加水平", "suggestion": "提高水平"}], "protected": []}
+{"id": "redundant-mudi", "category": "用词冗余", "text": "这样做的目的是为了更好。", "errors": [{"original": "目的是为了", "suggestion": "目的是"}], "protected": []}
+{"id": "de-1", "category": "的地得", "text": "我们要认真的学习。", "errors": [{"original": "认真的学习", "suggestion": "认真地学习"}], "protected": []}
+{"id": "de-2", "category": "的地得", "text": "他高兴的说了这句话。", "errors": [{"original": "高兴的说", "suggestion": "高兴地说"}], "protected": []}
+{"id": "de-3", "category": "的地得", "text": "他跑的很快。", "errors": [{"original": "他跑的很快", "suggestion": "他跑得很快"}], "protected": []}
+{"id": "de-4", "category": "的地得", "text": "这是他地书。", "errors": [{"original": "他地书", "suggestion": "他的书"}], "protected": []}
+{"id": "punct-period", "category": "标点", "text": "他很高兴.", "errors": [{"original": "兴.", "suggestion": "兴。"}], "protected": []}
+{"id": "punct-comma", "category": "标点", "text": "你好,世界", "errors": [{"original": "好,", "suggestion": "好，"}], "protected": []}
+{"id": "punct-question", "category": "标点", "text": "真的吗?", "errors": [{"original": "吗?", "suggestion": "吗？"}], "protected": []}
+{"id": "punct-exclaim", "category": "标点", "text": "太棒了!", "errors": [{"original": "了!", "suggestion": "了！"}], "protected": []}
+{"id": "punct-repeat", "category": "标点", "text": "太好了！！！我们走吧。", "errors": [{"original": "！！！", "suggestion": "！"}], "protected": []}
+{"id": "punct-space", "category": "标点", "text": "你好 ，世界。", "errors": [{"original": " ，", "suggestion": "，"}], "protected": []}
+{"id": "approx-cjk", "category": "近似匹配", "text": "这真是千方百记的好办法。", "errors": [{"original": "千方百记", "suggestion": "千方百计"}], "protected": []}
+{"id": "approx-latin", "category": "近似匹配", "text": "The qick brown fox.", "errors": [{"original": "qick", "suggestion": "quick"}], "protected": []}
+{"id": "multi-errors", "category": "综合", "text": "他一如继往努力，增加水平。你好,世界。", "errors": [{"original": "一如继往", "suggestion": "一如既往"}, {"original": "增加水平", "suggestion": "提高水平"}, {"original": "好,", "suggestion": "好，"}], "protected": []}
+{"id": "quote-closed", "category": "引文保护", "text": "他提醒我：“按步就班是错误的写法”，不要改。", "errors": [], "protected": [{"span": "“按步就班是错误的写法”", "reason": "成对引号内的引文"}]}
+{"id": "quote-unclosed", "category": "引文保护", "text": "他说：“按步就班没有引号收尾", "errors": [], "protected": [{"span": "“按步就班没有引号收尾", "reason": "未闭合引号保护到文末"}]}
+{"id": "blockquote", "category": "引文保护", "text": "> 按步就班 也不要改", "errors": [], "protected": [{"span": "按步就班", "reason": "块引用行"}]}
+{"id": "inline-code", "category": "代码保护", "text": "变量名 `按步就班` 不会被改写。", "errors": [], "protected": [{"span": "`按步就班`", "reason": "行内代码"}]}
+{"id": "fenced-code", "category": "代码保护", "text": "正常文字。\n```\n按步就班 = 1\n千方白计 = 2\n```\n结尾文字。", "errors": [], "protected": [{"span": "```\n按步就班 = 1\n千方白计 = 2\n```", "reason": "围栏代码块"}]}
+{"id": "url", "category": "URL保护", "text": "请访问 https://example.com/p/千方白记 查看。", "errors": [], "protected": [{"span": "https://example.com/p/千方白记", "reason": "URL"}]}
+{"id": "proper-whitelist", "category": "白名单", "text": "Taka 是新平台。", "errors": [], "protected": [{"span": "Taka", "reason": "白名单专有名词（否则会被近似纠正为 take）"}]}
+{"id": "all-caps", "category": "边界", "text": "PLEASE CHECK THE SYSTEM NOW", "errors": [], "protected": []}
+{"id": "digits", "category": "边界", "text": "在 2024 年完成 qick2 部署。", "errors": [], "protected": []}
+{"id": "mixed-width", "category": "全角半角混排", "text": "Hello world, 你好,世界. 我们认真的学习。", "errors": [{"original": "好,", "suggestion": "好，"}, {"original": "界.", "suggestion": "界。"}, {"original": "认真的学习", "suggestion": "认真地学习"}], "protected": []}
+{"id": "long-paragraph", "category": "超长段落", "text": "科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。他一如即往地继续研究。科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。流程必须按步就班。科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。这是一个明显的错误.科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。科学技术不断进步，给日常生活带来许多便利。", "errors": [{"original": "一如即往", "suggestion": "一如既往"}, {"original": "按步就班", "suggestion": "按部就班"}, {"original": "误.", "suggestion": "误。"}], "protected": []}

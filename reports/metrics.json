@@ -1,0 +1,11 @@
+{
+  "sample_count": 37,
+  "annotated_errors": 31,
+  "tp": 31,
+  "fp": 0,
+  "fn": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "protected_violations": 0
+}

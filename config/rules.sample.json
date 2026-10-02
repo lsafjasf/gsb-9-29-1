@@ -1,0 +1,243 @@
+{
+  "version": "0.1",
+  "rules": [
+    {
+      "id": "typo-jiushi",
+      "kind": "literal",
+      "pattern": "九是十非",
+      "replacement": "九死一生",
+      "reason": "用词错误：成语误写",
+      "confidence": 0.95
+    },
+    {
+      "id": "typo-qianfang",
+      "kind": "literal",
+      "pattern": "千方白计",
+      "replacement": "千方百计",
+      "reason": "用词错误：成语误写",
+      "confidence": 0.95
+    },
+    {
+      "id": "typo-yizhi",
+      "kind": "literal",
+      "pattern": "一如继往",
+      "replacement": "一如既往",
+      "reason": "用词错误：成语误写",
+      "confidence": 0.95
+    },
+    {
+      "id": "typo-anbu",
+      "kind": "literal",
+      "pattern": "按步就班",
+      "replacement": "按部就班",
+      "reason": "用词错误：成语误写",
+      "confidence": 0.95
+    },
+    {
+      "id": "typo-mingji",
+      "kind": "literal",
+      "pattern": "名记",
+      "replacement": "铭记",
+      "reason": "用词错误：同音字误用",
+      "confidence": 0.8
+    },
+    {
+      "id": "collab-zhiding",
+      "kind": "literal",
+      "pattern": "制定计划",
+      "replacement": "制订计划",
+      "reason": "搭配问题：'制订' 侧重拟定过程，与 '计划' 搭配更贴切",
+      "confidence": 0.85
+    },
+    {
+      "id": "collab-jianyi",
+      "kind": "literal",
+      "pattern": "反应意见",
+      "replacement": "反映意见",
+      "reason": "搭配问题：向上级转达意见应用 '反映'",
+      "confidence": 0.85
+    },
+    {
+      "id": "collab-huanying",
+      "kind": "literal",
+      "pattern": "强烈欢迎",
+      "replacement": "热烈欢迎",
+      "reason": "搭配问题：'欢迎' 习惯与 '热烈' 搭配",
+      "confidence": 0.85
+    },
+    {
+      "id": "collab-tigao",
+      "kind": "literal",
+      "pattern": "增加水平",
+      "replacement": "提高水平",
+      "reason": "搭配问题：'水平' 习惯与 '提高' 搭配",
+      "confidence": 0.85
+    },
+    {
+      "id": "redundant-mudi",
+      "kind": "literal",
+      "pattern": "目的是为了",
+      "replacement": "目的是",
+      "reason": "用词冗余：'目的是' 与 '为了' 语义重复",
+      "confidence": 0.8
+    },
+    {
+      "id": "de-1",
+      "kind": "literal",
+      "pattern": "认真的学习",
+      "replacement": "认真地学习",
+      "reason": "'de' 用法：动词前作状语应用 '地'",
+      "confidence": 0.9
+    },
+    {
+      "id": "de-2",
+      "kind": "literal",
+      "pattern": "高兴的说",
+      "replacement": "高兴地说",
+      "reason": "'de' 用法：动词前作状语应用 '地'",
+      "confidence": 0.9
+    },
+    {
+      "id": "de-3",
+      "kind": "literal",
+      "pattern": "他跑的很快",
+      "replacement": "他跑得很快",
+      "reason": "'de' 用法：补语前应用 '得'",
+      "confidence": 0.9
+    },
+    {
+      "id": "de-4",
+      "kind": "literal",
+      "pattern": "他地书",
+      "replacement": "他的书",
+      "reason": "'de' 用法：名词前作定语应用 '的'",
+      "confidence": 0.9
+    },
+    {
+      "id": "punct-fullstop",
+      "kind": "regex",
+      "pattern": "([\\u4e00-\\u9fff])\\.",
+      "replacement": "\\1。",
+      "reason": "标点：中文语境应使用全角句号",
+      "confidence": 0.85
+    },
+    {
+      "id": "punct-comma",
+      "kind": "regex",
+      "pattern": "([\\u4e00-\\u9fff]),",
+      "replacement": "\\1，",
+      "reason": "标点：中文语境应使用全角逗号",
+      "confidence": 0.85
+    },
+    {
+      "id": "punct-question",
+      "kind": "regex",
+      "pattern": "([\\u4e00-\\u9fff])\\?",
+      "replacement": "\\1？",
+      "reason": "标点：中文语境应使用全角问号",
+      "confidence": 0.85
+    },
+    {
+      "id": "punct-exclaim",
+      "kind": "regex",
+      "pattern": "([\\u4e00-\\u9fff])!",
+      "replacement": "\\1！",
+      "reason": "标点：中文语境应使用全角感叹号",
+      "confidence": 0.85
+    },
+    {
+      "id": "punct-repeat",
+      "kind": "regex",
+      "pattern": "([。！？])\\1+",
+      "replacement": "\\1",
+      "reason": "标点：句末标点重复",
+      "confidence": 0.9
+    },
+    {
+      "id": "punct-space",
+      "kind": "regex",
+      "pattern": "[ \\t]+([，。！？；：])",
+      "replacement": "\\1",
+      "reason": "标点：标点前有多余空格",
+      "confidence": 0.8
+    }
+  ],
+  "approximate": {
+    "enabled": true,
+    "max_distance": 1,
+    "min_latin_len": 4,
+    "min_cjk_len": 4,
+    "base_confidence": 0.6,
+    "prune": "index"
+  },
+  "cjk_dictionary": [
+    "千方百计",
+    "一如既往",
+    "按部就班",
+    "九死一生",
+    "制订计划",
+    "很高兴",
+    "问题",
+    "我们",
+    "今天",
+    "认真",
+    "学习",
+    "欢迎",
+    "水平",
+    "意见",
+    "铭记",
+    "目的",
+    "为了",
+    "反应",
+    "反映",
+    "制订"
+  ],
+  "en_dictionary": [
+    "the",
+    "this",
+    "that",
+    "with",
+    "from",
+    "have",
+    "will",
+    "your",
+    "about",
+    "would",
+    "there",
+    "their",
+    "which",
+    "when",
+    "make",
+    "like",
+    "time",
+    "just",
+    "know",
+    "take",
+    "people",
+    "into",
+    "year",
+    "good",
+    "some",
+    "could",
+    "them",
+    "than",
+    "then",
+    "look",
+    "quick",
+    "world"
+  ],
+  "whitelist": [
+    "行得通",
+    "办得到",
+    "OpenAI",
+    "GitHub",
+    "ChatGPT",
+    "Codex"
+  ],
+  "proper_nouns": [
+    "张伟",
+    "李娜",
+    "王芳",
+    "Taka"
+  ]
+}
