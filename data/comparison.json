@@ -1,0 +1,270 @@
+{
+  "scenarios": {
+    "A_正常收敛": {
+      "step": {
+        "converged": false,
+        "unstable": false,
+        "epochs": 2000,
+        "final_true_loss": 0.0032914650670672063,
+        "best_true_loss": 0.0032914650670672063,
+        "final_lr": 9.765625e-05,
+        "rollbacks": 0,
+        "plateau_events": 388,
+        "oscillating_events": 0,
+        "tail_mean": 0.0032946171640744863,
+        "tail_std": 1.8572130375705476e-06,
+        "tail_range": 6.306164710157599e-06,
+        "rollback_events": []
+      },
+      "cosine": {
+        "converged": true,
+        "unstable": false,
+        "epochs": 969,
+        "final_true_loss": 9.957402655280307e-07,
+        "best_true_loss": 9.957402655280307e-07,
+        "final_lr": 0.02625611270327265,
+        "rollbacks": 0,
+        "plateau_events": 0,
+        "oscillating_events": 0,
+        "tail_mean": 1.312941536247057e-06,
+        "tail_std": 2.0657522281269348e-07,
+        "tail_range": 7.035713531179405e-07,
+        "rollback_events": []
+      },
+      "plateau": {
+        "converged": true,
+        "unstable": false,
+        "epochs": 802,
+        "final_true_loss": 9.973604317446937e-07,
+        "best_true_loss": 9.973604317446937e-07,
+        "final_lr": 0.05,
+        "rollbacks": 0,
+        "plateau_events": 0,
+        "oscillating_events": 0,
+        "tail_mean": 1.7015592900248325e-06,
+        "tail_std": 4.894877584837256e-07,
+        "tail_range": 1.6732040209829903e-06,
+        "rollback_events": []
+      }
+    },
+    "B_一开始就发散": {
+      "step": {
+        "converged": true,
+        "unstable": false,
+        "epochs": 89,
+        "final_true_loss": 8.747673630108597e-07,
+        "best_true_loss": 8.747673630108597e-07,
+        "final_lr": 0.75,
+        "rollbacks": 2,
+        "plateau_events": 0,
+        "oscillating_events": 0,
+        "tail_mean": 1.1873873418364382,
+        "tail_std": 4.78803677683053,
+        "tail_range": 32.224999125232635,
+        "rollback_events": [
+          {
+            "epoch": 20,
+            "pre_lr": 3.0,
+            "post_lr": 1.5,
+            "bad_loss": 2.273736754432321e+31,
+            "best_true_loss": 110.0,
+            "reason": "连续 2 个窗口满足发散证据：最近 5 轮最低值已高于前半窗最高值，尾部均值 4.73695e+30 相对头部均值 2.48353e+16 放大 190734843750002.03x（阈值 1.5x），确认发散"
+          },
+          {
+            "epoch": 40,
+            "pre_lr": 1.5,
+            "post_lr": 0.75,
+            "bad_loss": 109951162777600.0,
+            "best_true_loss": 110.0,
+            "reason": "连续 2 个窗口满足发散证据：最近 5 轮最低值已高于前半窗最高值，尾部均值 2.92917e+13 相对头部均值 1.3981e+07 放大 2095105.85x（阈值 1.5x），确认发散"
+          }
+        ]
+      },
+      "cosine": {
+        "converged": true,
+        "unstable": false,
+        "epochs": 89,
+        "final_true_loss": 8.940025090675778e-07,
+        "best_true_loss": 8.940025090675778e-07,
+        "final_lr": 0.7483357367483452,
+        "rollbacks": 2,
+        "plateau_events": 0,
+        "oscillating_events": 0,
+        "tail_mean": 1.1852403751170295,
+        "tail_std": 4.777549491154214,
+        "tail_range": 32.15710419337699,
+        "rollback_events": [
+          {
+            "epoch": 20,
+            "pre_lr": 2.999671025213365,
+            "post_lr": 1.4998355126072307,
+            "bad_loss": 2.269447038259067e+31,
+            "best_true_loss": 110.0,
+            "reason": "连续 2 个窗口满足发散证据：最近 5 轮最低值已高于前半窗最高值，尾部均值 4.72807e+30 相对头部均值 2.4829e+16 放大 190424790542895.62x（阈值 1.5x），确认发散"
+          },
+          {
+            "epoch": 40,
+            "pre_lr": 1.4993421225785297,
+            "post_lr": 0.7496710612914578,
+            "bad_loss": 108222075858842.61,
+            "best_true_loss": 110.0,
+            "reason": "连续 2 个窗口满足发散证据：最近 5 轮最低值已高于前半窗最高值，尾部均值 2.88433e+13 相对头部均值 1.39088e+07 放大 2073740.94x（阈值 1.5x），确认发散"
+          }
+        ]
+      },
+      "plateau": {
+        "converged": true,
+        "unstable": false,
+        "epochs": 89,
+        "final_true_loss": 8.747673630108597e-07,
+        "best_true_loss": 8.747673630108597e-07,
+        "final_lr": 0.75,
+        "rollbacks": 2,
+        "plateau_events": 0,
+        "oscillating_events": 0,
+        "tail_mean": 1.1873873418364382,
+        "tail_std": 4.78803677683053,
+        "tail_range": 32.224999125232635,
+        "rollback_events": [
+          {
+            "epoch": 20,
+            "pre_lr": 3.0,
+            "post_lr": 1.5,
+            "bad_loss": 2.273736754432321e+31,
+            "best_true_loss": 110.0,
+            "reason": "连续 2 个窗口满足发散证据：最近 5 轮最低值已高于前半窗最高值，尾部均值 4.73695e+30 相对头部均值 2.48353e+16 放大 190734843750002.03x（阈值 1.5x），确认发散"
+          },
+          {
+            "epoch": 40,
+            "pre_lr": 1.5,
+            "post_lr": 0.75,
+            "bad_loss": 109951162777600.0,
+            "best_true_loss": 110.0,
+            "reason": "连续 2 个窗口满足发散证据：最近 5 轮最低值已高于前半窗最高值，尾部均值 2.92917e+13 相对头部均值 1.3981e+07 放大 2095105.85x（阈值 1.5x），确认发散"
+          }
+        ]
+      }
+    },
+    "C_噪声极大": {
+      "step": {
+        "converged": true,
+        "unstable": false,
+        "epochs": 113,
+        "final_true_loss": 9.116688771198856e-09,
+        "best_true_loss": 9.116688771198856e-09,
+        "final_lr": 0.05,
+        "rollbacks": 0,
+        "plateau_events": 0,
+        "oscillating_events": 64,
+        "tail_mean": 2.9264160024882542e-05,
+        "tail_std": 6.032178660466997e-05,
+        "tail_range": 0.00027800778806551767,
+        "rollback_events": []
+      },
+      "cosine": {
+        "converged": true,
+        "unstable": false,
+        "epochs": 117,
+        "final_true_loss": 8.60882011076677e-09,
+        "best_true_loss": 8.60882011076677e-09,
+        "final_lr": 0.04552873112259656,
+        "rollbacks": 0,
+        "plateau_events": 0,
+        "oscillating_events": 66,
+        "tail_mean": 1.5225226939154273e-05,
+        "tail_std": 3.061034110320565e-05,
+        "tail_range": 0.00013973333484829274,
+        "rollback_events": []
+      },
+      "plateau": {
+        "converged": true,
+        "unstable": false,
+        "epochs": 136,
+        "final_true_loss": 9.295894572625596e-09,
+        "best_true_loss": 9.295894572625596e-09,
+        "final_lr": 0.025,
+        "rollbacks": 0,
+        "plateau_events": 0,
+        "oscillating_events": 74,
+        "tail_mean": 3.2204158838007266e-07,
+        "tail_std": 4.664087765482336e-07,
+        "tail_range": 2.1745733798345244e-06,
+        "rollback_events": []
+      }
+    },
+    "D_长时间不下降": {
+      "step": {
+        "converged": false,
+        "unstable": false,
+        "epochs": 300,
+        "final_true_loss": 199.86004888364255,
+        "best_true_loss": 199.86004888364255,
+        "final_lr": 2.5e-07,
+        "rollbacks": 0,
+        "plateau_events": 281,
+        "oscillating_events": 0,
+        "tail_mean": 199.86494553685884,
+        "tail_std": 0.002884225705584507,
+        "tail_range": 0.009793384779669623,
+        "rollback_events": []
+      },
+      "cosine": {
+        "converged": false,
+        "unstable": false,
+        "epochs": 300,
+        "final_true_loss": 199.87844086552394,
+        "best_true_loss": 199.87844086552394,
+        "final_lr": 1.002714116407149e-08,
+        "rollbacks": 0,
+        "plateau_events": 281,
+        "oscillating_events": 0,
+        "tail_mean": 199.8788606441726,
+        "tail_std": 0.0003619276832043299,
+        "tail_range": 0.0012572779577340043,
+        "rollback_events": []
+      },
+      "plateau": {
+        "converged": false,
+        "unstable": false,
+        "epochs": 300,
+        "final_true_loss": 199.9799624912711,
+        "best_true_loss": 199.9799624912711,
+        "final_lr": 1e-08,
+        "rollbacks": 0,
+        "plateau_events": 281,
+        "oscillating_events": 0,
+        "tail_mean": 199.9801584717657,
+        "tail_std": 0.0001154355055280203,
+        "tail_range": 0.0003919611147296109,
+        "rollback_events": []
+      }
+    }
+  },
+  "diagnosis_probes": {
+    "发散曲线(指数爆炸)": {
+      "status": "diverging",
+      "reason": "连续 6 个窗口满足发散证据：最近 5 轮最低值已高于前半窗最高值，尾部均值 57.0586 相对头部均值 6.45935 放大 8.83x（阈值 1.5x），确认发散",
+      "action": "回滚到历史最优状态，并把步长减半后继续"
+    },
+    "平台期曲线(几乎不动)": {
+      "status": "plateau",
+      "reason": "窗口归一化斜率 2.000e-06 与变异系数 1.153e-06 均不超过 0.001，损失长时间停在 5.00001 附近",
+      "action": "适当降低步长（或切换到按平台期衰减），检查是否已到精度极限"
+    },
+    "震荡曲线(来回跳动)": {
+      "status": "oscillating",
+      "reason": "变异系数 3.333e-01 超过阈值 0.1，且 19 个相邻变化中有 18 次反转（翻转率 0.95），训练在最优点附近来回跳动",
+      "action": "降低步长并对损失做滑动平均；若数据噪声大应增大批量或使用鲁棒损失"
+    },
+    "健康下降曲线": {
+      "status": "healthy",
+      "reason": "窗口均值 2.5935、标准差 1.52、归一化斜率 -9.659e-01，各项指标正常",
+      "action": "保持当前步长继续训练"
+    },
+    "噪声极大曲线": {
+      "status": "healthy",
+      "reason": "窗口均值 0.0324762、标准差 0.374、归一化斜率 1.103e+00，各项指标正常",
+      "action": "保持当前步长继续训练"
+    }
+  }
+}
