@@ -1,0 +1,5 @@
+Machine learning transforms healthcare
+
+Machine learning is reshaping healthcare, from diagnosis to drug discovery. Hospitals use machine learning models to read scans and flag risks earlier than before.
+
+Researchers say data quality remains the biggest challenge for healthcare models. With better data and careful validation, machine learning could make diagnosis faster and drug discovery cheaper.
