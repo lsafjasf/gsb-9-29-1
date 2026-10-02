@@ -1,0 +1,9 @@
+Restart recovery report
+================================================
+random streams          : 300
+events fed              : 81069
+restart cut points      : 613
+comparison              : snapshot() equality + 30 interval probes each
+mismatches              : 0
+equality                : bitwise identical (==)
+sample stream stats     : {'accepted': 70, 'duplicates': 7, 'late': 0, 'clock_regressions': 0}

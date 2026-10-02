@@ -1,0 +1,18 @@
+Decaying counter differential test report
+================================================
+trials                 : 400
+events generated       : 131778
+events admitted        : 88420
+events rejected (dup+late): 43358
+  of which duplicates    : 8006
+  of which too late      : 35352
+interval queries       : 24000
+tolerance              : rel <= 1e-09, abs <= 1e-12 (zero truth)
+queries out of tolerance: 0
+max relative error     : 9.839e-16
+mean per-trial max err : 1.443e-16
+worst trial seed       : 10176 (events=545, dropped=0)
+worst query            : [66.180881, 835.290509]
+  recomputed           : 43.32899473125172
+  counter              : 43.328994731251676
+elapsed seconds        : 0.44
