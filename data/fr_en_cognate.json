@@ -1,0 +1,30 @@
+{
+  "name": "fr_en_cognate",
+  "lang": "fr-en",
+  "src": [
+    "La conférence annuelle abordera les tendances technologiques.",
+    "Les participants discuteront de l'intelligence artificielle.",
+    "Ils analyseront aussi la responsabilité des entreprises numériques.",
+    "Le premier ministre présentera une réforme de l'éducation.",
+    "Cette réforme concernera les universités publiques.",
+    "Les chercheurs publieront un document sur le climat.",
+    "Le document comparera les modèles climatiques régionaux."
+  ],
+  "tgt": [
+    "The annual conference will address technology trends.",
+    "Participants will discuss artificial intelligence.",
+    "They will also analyze the responsibility of digital companies.",
+    "The prime minister will present an education reform affecting public universities.",
+    "Researchers will publish a document on the climate.",
+    "The document will compare regional climate models."
+  ],
+  "gold": [
+    {"src": [0], "tgt": [0]},
+    {"src": [1], "tgt": [1]},
+    {"src": [2], "tgt": [2]},
+    {"src": [3, 4], "tgt": [3]},
+    {"src": [5], "tgt": [4]},
+    {"src": [6], "tgt": [5]}
+  ],
+  "notes": "French/English cognates let self-trained PMI lexical evidence reinforce the length model; includes a 2:1 merge."
+}

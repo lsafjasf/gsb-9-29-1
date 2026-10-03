@@ -1,0 +1,530 @@
+{
+  "datasets": [
+    {
+      "name": "basic_merge_gap",
+      "n_src": 9,
+      "n_tgt": 8,
+      "total_cost": 6.717797084283597,
+      "length_ratio": 1.8068,
+      "accuracy": 1.0,
+      "link_precision": 1.0,
+      "link_recall": 1.0,
+      "link_f1": 1.0,
+      "beads": 8,
+      "flagged_beads": 4,
+      "error_counts": {
+        "correct": 4,
+        "split_error": 0,
+        "merge_error": 0,
+        "spurious_pair": 0,
+        "missed_pair": 0,
+        "forced_confident_bulk": 0,
+        "confidence_mismatch": 4
+      },
+      "flagged_precision": 1.0,
+      "unflagged_precision": 1.0,
+      "path": [
+        [
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          3,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          3,
+          4
+        ],
+        [
+          5,
+          6,
+          4,
+          4
+        ],
+        [
+          6,
+          7,
+          4,
+          6
+        ],
+        [
+          7,
+          8,
+          6,
+          7
+        ],
+        [
+          8,
+          9,
+          7,
+          8
+        ]
+      ]
+    },
+    {
+      "name": "empty_both",
+      "n_src": 0,
+      "n_tgt": 0,
+      "total_cost": 0.0,
+      "length_ratio": 1.0,
+      "accuracy": 1.0,
+      "link_precision": 1.0,
+      "link_recall": 1.0,
+      "link_f1": 1.0,
+      "beads": 0,
+      "flagged_beads": 0,
+      "error_counts": {
+        "correct": 0,
+        "split_error": 0,
+        "merge_error": 0,
+        "spurious_pair": 0,
+        "missed_pair": 0,
+        "forced_confident_bulk": 0,
+        "confidence_mismatch": 0
+      },
+      "flagged_precision": null,
+      "unflagged_precision": null,
+      "path": []
+    },
+    {
+      "name": "empty_src",
+      "n_src": 0,
+      "n_tgt": 2,
+      "total_cost": 4.26,
+      "length_ratio": 4.0,
+      "accuracy": 1.0,
+      "link_precision": 1.0,
+      "link_recall": 1.0,
+      "link_f1": 1.0,
+      "beads": 2,
+      "flagged_beads": 0,
+      "error_counts": {
+        "correct": 2,
+        "split_error": 0,
+        "merge_error": 0,
+        "spurious_pair": 0,
+        "missed_pair": 0,
+        "forced_confident_bulk": 0,
+        "confidence_mismatch": 0
+      },
+      "flagged_precision": null,
+      "unflagged_precision": 1.0,
+      "path": [
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "name": "empty_tgt",
+      "n_src": 2,
+      "n_tgt": 0,
+      "total_cost": 4.088,
+      "length_ratio": 0.4762,
+      "accuracy": 1.0,
+      "link_precision": 1.0,
+      "link_recall": 1.0,
+      "link_f1": 1.0,
+      "beads": 2,
+      "flagged_beads": 0,
+      "error_counts": {
+        "correct": 2,
+        "split_error": 0,
+        "merge_error": 0,
+        "spurious_pair": 0,
+        "missed_pair": 0,
+        "forced_confident_bulk": 0,
+        "confidence_mismatch": 0
+      },
+      "flagged_precision": null,
+      "unflagged_precision": 1.0,
+      "path": [
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "extreme_ratio",
+      "n_src": 1,
+      "n_tgt": 6,
+      "total_cost": 13.174089830201643,
+      "length_ratio": 3.7761,
+      "accuracy": 1.0,
+      "link_precision": 1.0,
+      "link_recall": 1.0,
+      "link_f1": 1.0,
+      "beads": 7,
+      "flagged_beads": 4,
+      "error_counts": {
+        "correct": 1,
+        "split_error": 0,
+        "merge_error": 0,
+        "spurious_pair": 0,
+        "missed_pair": 0,
+        "forced_confident_bulk": 0,
+        "confidence_mismatch": 0
+      },
+      "flagged_precision": 0.0,
+      "unflagged_precision": 0.0,
+      "path": [
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          1,
+          5,
+          6
+        ]
+      ]
+    },
+    {
+      "name": "fr_en_cognate",
+      "n_src": 7,
+      "n_tgt": 6,
+      "total_cost": 0.7759274742138216,
+      "length_ratio": 0.8586,
+      "accuracy": 1.0,
+      "link_precision": 1.0,
+      "link_recall": 1.0,
+      "link_f1": 1.0,
+      "beads": 6,
+      "flagged_beads": 0,
+      "error_counts": {
+        "correct": 6,
+        "split_error": 0,
+        "merge_error": 0,
+        "spurious_pair": 0,
+        "missed_pair": 0,
+        "forced_confident_bulk": 0,
+        "confidence_mismatch": 0
+      },
+      "flagged_precision": null,
+      "unflagged_precision": 1.0,
+      "path": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          3,
+          5,
+          3,
+          4
+        ],
+        [
+          5,
+          6,
+          4,
+          5
+        ],
+        [
+          6,
+          7,
+          5,
+          6
+        ]
+      ]
+    },
+    {
+      "name": "repeated",
+      "n_src": 5,
+      "n_tgt": 5,
+      "total_cost": 1.0435273221620294,
+      "length_ratio": 1.8462,
+      "accuracy": 1.0,
+      "link_precision": 1.0,
+      "link_recall": 1.0,
+      "link_f1": 1.0,
+      "beads": 5,
+      "flagged_beads": 2,
+      "error_counts": {
+        "correct": 3,
+        "split_error": 0,
+        "merge_error": 0,
+        "spurious_pair": 0,
+        "missed_pair": 0,
+        "forced_confident_bulk": 0,
+        "confidence_mismatch": 2
+      },
+      "flagged_precision": 1.0,
+      "unflagged_precision": 1.0,
+      "path": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          3,
+          4,
+          3,
+          4
+        ],
+        [
+          4,
+          5,
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "name": "single",
+      "n_src": 1,
+      "n_tgt": 1,
+      "total_cost": 1.872964529381764,
+      "length_ratio": 1.7561,
+      "accuracy": 1.0,
+      "link_precision": 1.0,
+      "link_recall": 1.0,
+      "link_f1": 1.0,
+      "beads": 1,
+      "flagged_beads": 0,
+      "error_counts": {
+        "correct": 1,
+        "split_error": 0,
+        "merge_error": 0,
+        "spurious_pair": 0,
+        "missed_pair": 0,
+        "forced_confident_bulk": 0,
+        "confidence_mismatch": 0
+      },
+      "flagged_precision": null,
+      "unflagged_precision": 1.0,
+      "path": [
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "skew_4_8",
+      "n_src": 4,
+      "n_tgt": 8,
+      "total_cost": 3.030665955045791,
+      "length_ratio": 1.7151,
+      "accuracy": 1.0,
+      "link_precision": 1.0,
+      "link_recall": 1.0,
+      "link_f1": 1.0,
+      "beads": 4,
+      "flagged_beads": 0,
+      "error_counts": {
+        "correct": 4,
+        "split_error": 0,
+        "merge_error": 0,
+        "spurious_pair": 0,
+        "missed_pair": 0,
+        "forced_confident_bulk": 0,
+        "confidence_mismatch": 0
+      },
+      "flagged_precision": null,
+      "unflagged_precision": 1.0,
+      "path": [
+        [
+          0,
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          2,
+          2,
+          4
+        ],
+        [
+          2,
+          3,
+          4,
+          6
+        ],
+        [
+          3,
+          4,
+          6,
+          8
+        ]
+      ]
+    },
+    {
+      "name": "unrelated_anchors",
+      "n_src": 4,
+      "n_tgt": 4,
+      "total_cost": 9.743958924836878,
+      "length_ratio": 1.8977,
+      "accuracy": 0.25,
+      "link_precision": 0.5,
+      "link_recall": 0.25,
+      "link_f1": 0.3333,
+      "beads": 6,
+      "flagged_beads": 6,
+      "error_counts": {
+        "correct": 0,
+        "split_error": 0,
+        "merge_error": 1,
+        "spurious_pair": 0,
+        "missed_pair": 2,
+        "forced_confident_bulk": 0,
+        "confidence_mismatch": 1
+      },
+      "flagged_precision": 0.1667,
+      "unflagged_precision": null,
+      "path": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          3,
+          4
+        ],
+        [
+          3,
+          4,
+          4,
+          4
+        ]
+      ]
+    }
+  ],
+  "aggregate": {
+    "total_gold_beads": 33,
+    "accuracy": 0.9090909090909091,
+    "error_counts": {
+      "correct": 23,
+      "split_error": 0,
+      "merge_error": 1,
+      "spurious_pair": 0,
+      "missed_pair": 2,
+      "forced_confident_bulk": 0,
+      "confidence_mismatch": 7
+    },
+    "error_distribution": {
+      "split_error": 0.0,
+      "merge_error": 0.0303,
+      "spurious_pair": 0.0,
+      "missed_pair": 0.0606,
+      "forced_confident_bulk": 0.0
+    },
+    "over_flagged": 7
+  }
+}

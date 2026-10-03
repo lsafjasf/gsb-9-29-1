@@ -1,0 +1,493 @@
+[
+  {
+    "name": "basic_merge_gap",
+    "length_ratio": 1.8068,
+    "total_cost": 6.718,
+    "beads": [
+      {
+        "type": "2-1",
+        "src": [
+          0,
+          1
+        ],
+        "tgt": [
+          0
+        ],
+        "posterior": 0.923,
+        "confidence": "high",
+        "flagged": false,
+        "contradiction": false,
+        "cost": 1.342
+      },
+      {
+        "type": "1-1",
+        "src": [
+          2
+        ],
+        "tgt": [
+          1
+        ],
+        "posterior": 0.7638,
+        "confidence": "high",
+        "flagged": false,
+        "contradiction": false,
+        "cost": 1.172
+      },
+      {
+        "type": "1-1",
+        "src": [
+          3
+        ],
+        "tgt": [
+          2
+        ],
+        "posterior": 0.8031,
+        "confidence": "high",
+        "flagged": false,
+        "contradiction": false,
+        "cost": -0.362
+      },
+      {
+        "type": "1-1",
+        "src": [
+          4
+        ],
+        "tgt": [
+          3
+        ],
+        "posterior": 0.7631,
+        "confidence": "high",
+        "flagged": false,
+        "contradiction": false,
+        "cost": 0.173
+      },
+      {
+        "type": "1-0",
+        "src": [
+          5
+        ],
+        "tgt": [],
+        "posterior": 0.4938,
+        "confidence": "medium",
+        "flagged": true,
+        "contradiction": false,
+        "cost": 2.076
+      },
+      {
+        "type": "1-2",
+        "src": [
+          6
+        ],
+        "tgt": [
+          4,
+          5
+        ],
+        "posterior": 0.3932,
+        "confidence": "medium",
+        "flagged": true,
+        "contradiction": false,
+        "cost": 1.91
+      },
+      {
+        "type": "1-1",
+        "src": [
+          7
+        ],
+        "tgt": [
+          6
+        ],
+        "posterior": 0.4721,
+        "confidence": "medium",
+        "flagged": true,
+        "contradiction": false,
+        "cost": 0.842
+      },
+      {
+        "type": "1-1",
+        "src": [
+          8
+        ],
+        "tgt": [
+          7
+        ],
+        "posterior": 0.5606,
+        "confidence": "medium",
+        "flagged": true,
+        "contradiction": false,
+        "cost": 1.371
+      }
+    ]
+  },
+  {
+    "name": "fr_en_cognate",
+    "length_ratio": 0.8586,
+    "total_cost": 0.776,
+    "beads": [
+      {
+        "type": "1-1",
+        "src": [
+          0
+        ],
+        "tgt": [
+          0
+        ],
+        "posterior": 0.925,
+        "confidence": "high",
+        "flagged": false,
+        "contradiction": false,
+        "cost": -0.388
+      },
+      {
+        "type": "1-1",
+        "src": [
+          1
+        ],
+        "tgt": [
+          1
+        ],
+        "posterior": 0.8591,
+        "confidence": "high",
+        "flagged": false,
+        "contradiction": false,
+        "cost": -0.323
+      },
+      {
+        "type": "1-1",
+        "src": [
+          2
+        ],
+        "tgt": [
+          2
+        ],
+        "posterior": 0.8649,
+        "confidence": "high",
+        "flagged": false,
+        "contradiction": false,
+        "cost": -0.173
+      },
+      {
+        "type": "2-1",
+        "src": [
+          3,
+          4
+        ],
+        "tgt": [
+          3
+        ],
+        "posterior": 0.8074,
+        "confidence": "high",
+        "flagged": false,
+        "contradiction": false,
+        "cost": 2.277
+      },
+      {
+        "type": "1-1",
+        "src": [
+          5
+        ],
+        "tgt": [
+          4
+        ],
+        "posterior": 0.7884,
+        "confidence": "high",
+        "flagged": false,
+        "contradiction": false,
+        "cost": 0.141
+      },
+      {
+        "type": "1-1",
+        "src": [
+          6
+        ],
+        "tgt": [
+          5
+        ],
+        "posterior": 0.862,
+        "confidence": "high",
+        "flagged": false,
+        "contradiction": false,
+        "cost": -0.24
+      }
+    ]
+  },
+  {
+    "name": "repeated",
+    "length_ratio": 1.8462,
+    "total_cost": 1.044,
+    "beads": [
+      {
+        "type": "1-1",
+        "src": [
+          0
+        ],
+        "tgt": [
+          0
+        ],
+        "posterior": 0.8022,
+        "confidence": "high",
+        "flagged": false,
+        "contradiction": false,
+        "cost": -0.143
+      },
+      {
+        "type": "1-1",
+        "src": [
+          1
+        ],
+        "tgt": [
+          1
+        ],
+        "posterior": 0.6044,
+        "confidence": "medium",
+        "flagged": true,
+        "contradiction": false,
+        "cost": 0.947
+      },
+      {
+        "type": "1-1",
+        "src": [
+          2
+        ],
+        "tgt": [
+          2
+        ],
+        "posterior": 0.6157,
+        "confidence": "medium",
+        "flagged": true,
+        "contradiction": false,
+        "cost": 0.947
+      },
+      {
+        "type": "1-1",
+        "src": [
+          3
+        ],
+        "tgt": [
+          3
+        ],
+        "posterior": 0.7374,
+        "confidence": "high",
+        "flagged": false,
+        "contradiction": false,
+        "cost": -0.699
+      },
+      {
+        "type": "1-1",
+        "src": [
+          4
+        ],
+        "tgt": [
+          4
+        ],
+        "posterior": 0.7898,
+        "confidence": "high",
+        "flagged": false,
+        "contradiction": false,
+        "cost": 0.947
+      }
+    ]
+  },
+  {
+    "name": "extreme_ratio",
+    "length_ratio": 3.7761,
+    "total_cost": 13.174,
+    "beads": [
+      {
+        "type": "0-1",
+        "src": [],
+        "tgt": [
+          0
+        ],
+        "posterior": 0.8571,
+        "confidence": "high",
+        "flagged": false,
+        "contradiction": false,
+        "cost": 2.2
+      },
+      {
+        "type": "1-0",
+        "src": [
+          0
+        ],
+        "tgt": [],
+        "posterior": 0.1429,
+        "confidence": "low",
+        "flagged": true,
+        "contradiction": false,
+        "cost": 2.188
+      },
+      {
+        "type": "0-1",
+        "src": [],
+        "tgt": [
+          1
+        ],
+        "posterior": 0.2857,
+        "confidence": "low",
+        "flagged": true,
+        "contradiction": false,
+        "cost": 2.112
+      },
+      {
+        "type": "0-1",
+        "src": [],
+        "tgt": [
+          2
+        ],
+        "posterior": 0.4286,
+        "confidence": "medium",
+        "flagged": true,
+        "contradiction": false,
+        "cost": 2.104
+      },
+      {
+        "type": "0-1",
+        "src": [],
+        "tgt": [
+          3
+        ],
+        "posterior": 0.5714,
+        "confidence": "medium",
+        "flagged": true,
+        "contradiction": false,
+        "cost": 2.2
+      },
+      {
+        "type": "0-1",
+        "src": [],
+        "tgt": [
+          4
+        ],
+        "posterior": 0.7143,
+        "confidence": "high",
+        "flagged": false,
+        "contradiction": false,
+        "cost": 2.148
+      },
+      {
+        "type": "0-1",
+        "src": [],
+        "tgt": [
+          5
+        ],
+        "posterior": 0.8571,
+        "confidence": "high",
+        "flagged": false,
+        "contradiction": false,
+        "cost": 2.168
+      }
+    ]
+  },
+  {
+    "name": "unrelated_anchors",
+    "length_ratio": 1.8977,
+    "total_cost": 9.744,
+    "beads": [
+      {
+        "type": "1-1",
+        "src": [
+          0
+        ],
+        "tgt": [
+          0
+        ],
+        "posterior": 0.2886,
+        "confidence": "low",
+        "flagged": true,
+        "contradiction": true,
+        "cost": 3.187
+      },
+      {
+        "type": "1-0",
+        "src": [
+          1
+        ],
+        "tgt": [],
+        "posterior": 0.1555,
+        "confidence": "low",
+        "flagged": true,
+        "contradiction": false,
+        "cost": 2.08
+      },
+      {
+        "type": "0-1",
+        "src": [],
+        "tgt": [
+          1
+        ],
+        "posterior": 0.1669,
+        "confidence": "low",
+        "flagged": true,
+        "contradiction": false,
+        "cost": 2.196
+      },
+      {
+        "type": "0-1",
+        "src": [],
+        "tgt": [
+          2
+        ],
+        "posterior": 0.1775,
+        "confidence": "low",
+        "flagged": true,
+        "contradiction": false,
+        "cost": 2.128
+      },
+      {
+        "type": "1-1",
+        "src": [
+          2
+        ],
+        "tgt": [
+          3
+        ],
+        "posterior": 0.1336,
+        "confidence": "low",
+        "flagged": true,
+        "contradiction": true,
+        "cost": 3.185
+      },
+      {
+        "type": "1-0",
+        "src": [
+          3
+        ],
+        "tgt": [],
+        "posterior": 0.3636,
+        "confidence": "medium",
+        "flagged": true,
+        "contradiction": false,
+        "cost": 2.052
+      }
+    ]
+  },
+  {
+    "name": "raw_texts",
+    "src_text": "纯水在标准大气压下于100摄氏度时沸腾。当外界气压降低时，水的沸点也会随之降低。",
+    "tgt_text": "Pure water boils at 100 degrees Celsius at standard pressure. When the ambient pressure drops, its boiling point drops as well.",
+    "beads": [
+      {
+        "type": "1-1",
+        "src": [
+          0
+        ],
+        "tgt": [
+          0
+        ],
+        "posterior": 0.7974,
+        "confidence": "high"
+      },
+      {
+        "type": "1-1",
+        "src": [
+          1
+        ],
+        "tgt": [
+          1
+        ],
+        "posterior": 0.6665,
+        "confidence": "high"
+      }
+    ]
+  }
+]

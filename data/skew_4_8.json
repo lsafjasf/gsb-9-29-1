@@ -1,0 +1,59 @@
+{
+  "name": "skew_4_8",
+  "lang": "zh-en",
+  "src": [
+    "第1章介绍研究背景、问题动机、总体目标与适用范围，并说明各章节的组织结构安排。",
+    "第2章分析系统采用的方法论、实验数据来源、预处理流程以及准确率和召回率等评估指标。",
+    "第3章展示对比实验结果，包括不同模型在测试集上的准确率、召回率和显著性检验分析。",
+    "第4章总结全文的主要结论，讨论当前方法的局限性，并提出若干未来工作的研究方向。"
+  ],
+  "tgt": [
+    "Chapter 1 introduces the background.",
+    "It then states the objectives and scope.",
+    "Chapter 2 analyzes the methodology.",
+    "It also describes the data sources and evaluation metrics.",
+    "Chapter 3 presents the experimental results.",
+    "These include accuracy and recall.",
+    "Chapter 4 summarizes the conclusions.",
+    "It also proposes directions for future work."
+  ],
+  "gold": [
+    {
+      "src": [
+        0
+      ],
+      "tgt": [
+        0,
+        1
+      ]
+    },
+    {
+      "src": [
+        1
+      ],
+      "tgt": [
+        2,
+        3
+      ]
+    },
+    {
+      "src": [
+        2
+      ],
+      "tgt": [
+        4,
+        5
+      ]
+    },
+    {
+      "src": [
+        3
+      ],
+      "tgt": [
+        6,
+        7
+      ]
+    }
+  ],
+  "notes": "Uniform 1:2 ratio (4 vs 8)."
+}

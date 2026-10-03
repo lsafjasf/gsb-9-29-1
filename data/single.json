@@ -1,0 +1,21 @@
+{
+  "name": "single",
+  "lang": "zh-en",
+  "src": [
+    "纯水在标准大气压下会在100摄氏度时沸腾。"
+  ],
+  "tgt": [
+    "Pure water boils at 100 degrees Celsius at standard pressure."
+  ],
+  "gold": [
+    {
+      "src": [
+        0
+      ],
+      "tgt": [
+        0
+      ]
+    }
+  ],
+  "notes": "Single sentence per side."
+}

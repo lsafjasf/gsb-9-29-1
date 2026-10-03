@@ -1,0 +1,51 @@
+{
+  "name": "unrelated_anchors",
+  "lang": "zh-en",
+  "src": [
+    "订单A100在2024年3月发货，共12件。",
+    "客户张三投诉物流延迟，工单编号B200。",
+    "仓库目前库存约5000件。",
+    "去年退货率为百分之3左右。"
+  ],
+  "tgt": [
+    "Invoice C900 was issued in May 2025 for 88 units.",
+    "Customer李四 complained about billing errors in case D700.",
+    "The warehouse holds about 9000 items.",
+    "The return rate was 13 percent."
+  ],
+  "gold": [
+    {
+      "src": [
+        0
+      ],
+      "tgt": [
+        0
+      ]
+    },
+    {
+      "src": [
+        1
+      ],
+      "tgt": [
+        1
+      ]
+    },
+    {
+      "src": [
+        2
+      ],
+      "tgt": [
+        2
+      ]
+    },
+    {
+      "src": [
+        3
+      ],
+      "tgt": [
+        3
+      ]
+    }
+  ],
+  "notes": "Same counts and similar lengths, but topics are unrelated. Anchors conflict (percent is shared only on the last pair); the aligner must flag rather than assert confident matches."
+}

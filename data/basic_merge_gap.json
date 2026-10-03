@@ -1,0 +1,92 @@
+{
+  "name": "basic_merge_gap",
+  "lang": "zh-en",
+  "src": [
+    "公司在2024年第一季度发布了新产品。",
+    "新产品覆盖手机和耳机两条产品线。",
+    "首席执行官在发布会上表示，市场反应超出预期。",
+    "该产品在欧洲销售了300000台。",
+    "在北美市场，销量达到450000台。",
+    "第99号内部备忘录还讨论了供应链问题。",
+    "第二季度公司将重点扩展企业客户，同时扩大合作伙伴网络覆盖，服务更多区域客户。",
+    "公司计划在全国新开12家线下门店。",
+    "这些新门店将主要分布在一线城市的核心商圈。"
+  ],
+  "tgt": [
+    "The company launched a new product line in Q1 2024, covering phones and headphones.",
+    "The CEO said the market response exceeded expectations.",
+    "The product sold 300000 units in Europe.",
+    "In North America, sales reached 450000 units.",
+    "In Q2 the company will focus on enterprise customers.",
+    "It will broaden the partner network.",
+    "The company plans to open 12 new offline stores.",
+    "These stores will mainly be located in tier-one cities."
+  ],
+  "gold": [
+    {
+      "src": [
+        0,
+        1
+      ],
+      "tgt": [
+        0
+      ]
+    },
+    {
+      "src": [
+        2
+      ],
+      "tgt": [
+        1
+      ]
+    },
+    {
+      "src": [
+        3
+      ],
+      "tgt": [
+        2
+      ]
+    },
+    {
+      "src": [
+        4
+      ],
+      "tgt": [
+        3
+      ]
+    },
+    {
+      "src": [
+        5
+      ],
+      "tgt": []
+    },
+    {
+      "src": [
+        6
+      ],
+      "tgt": [
+        4,
+        5
+      ]
+    },
+    {
+      "src": [
+        7
+      ],
+      "tgt": [
+        6
+      ]
+    },
+    {
+      "src": [
+        8
+      ],
+      "tgt": [
+        7
+      ]
+    }
+  ],
+  "notes": "2:1 merge, 1:2 merge, one source segment missing on target side."
+}

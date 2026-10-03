@@ -1,0 +1,14 @@
+{
+  "name": "empty_src",
+  "lang": "zh-en",
+  "src": [],
+  "tgt": [
+    "This document exists only on the target side.",
+    "It has a second sentence as well."
+  ],
+  "gold": [
+    {"src": [], "tgt": [0]},
+    {"src": [], "tgt": [1]}
+  ],
+  "notes": "Empty source document."
+}

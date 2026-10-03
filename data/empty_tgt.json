@@ -1,0 +1,14 @@
+{
+  "name": "empty_tgt",
+  "lang": "zh-en",
+  "src": [
+    "这份文档只在源语言一侧存在。",
+    "它还有第二句话。"
+  ],
+  "tgt": [],
+  "gold": [
+    {"src": [0], "tgt": []},
+    {"src": [1], "tgt": []}
+  ],
+  "notes": "Empty target document."
+}

@@ -1,0 +1,26 @@
+{
+  "name": "repeated",
+  "lang": "zh-en",
+  "src": [
+    "会议于上午9点开始。",
+    "请大家准时参加。",
+    "请大家准时参加。",
+    "会议于上午11点结束。",
+    "请大家准时参加。"
+  ],
+  "tgt": [
+    "The meeting starts at 9 am.",
+    "Please attend on time.",
+    "Please attend on time.",
+    "The meeting ends at 11 am.",
+    "Please attend on time."
+  ],
+  "gold": [
+    {"src": [0], "tgt": [0]},
+    {"src": [1], "tgt": [1]},
+    {"src": [2], "tgt": [2]},
+    {"src": [3], "tgt": [3]},
+    {"src": [4], "tgt": [4]}
+  ],
+  "notes": "Repeated identical sentences; monotonic order and anchor sentences disambiguate positions."
+}

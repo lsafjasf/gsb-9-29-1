@@ -1,0 +1,19 @@
+{
+  "name": "extreme_ratio",
+  "lang": "zh-en",
+  "src": [
+    "本节概述系统的总体架构，包括数据采集、预处理、特征提取、模型训练、在线推理和监控告警六个部分。"
+  ],
+  "tgt": [
+    "This section gives an overview of the system architecture.",
+    "It first covers data collection.",
+    "It then covers preprocessing.",
+    "Feature extraction and model training are described next.",
+    "Online inference is introduced after that.",
+    "Finally, monitoring and alerting are discussed."
+  ],
+  "gold": [
+    {"src": [0], "tgt": [0, 1, 2, 3, 4, 5], "bulk_uncertain": true}
+  ],
+  "notes": "1:6 extreme ratio; human annotation is bulk-uncertain, system must flag, not force a confident pairing."
+}
